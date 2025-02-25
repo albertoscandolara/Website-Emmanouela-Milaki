@@ -1,0 +1,52 @@
+{% set body_classes = body_class(['header-fixed', 'header-animated', 'header-dark', 'header-transparent', 'sticky-footer']) %}
+{% set grid_size = theme_var('grid-size') %}
+{% set compress = theme_var('production-mode') ? '.min.css' : '.css' %}
+{% use 'blocks/base.html.twig' %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
+<head>
+{% block head deferred %}
+    <meta charset="utf-8" />
+    <title>{% if page.title %}{{ page.title|e('html') }}{% endif %}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.svg') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+{% endblock head %}
+
+{% block stylesheets %}
+    {% do assets.addCss('theme://css-compiled/theme'~compress) %}
+{% endblock %}
+
+{% block javascripts %}
+    {% do assets.addJs('theme://js/item.js', {group:'bottom'}) %}
+{% endblock %}
+
+{% block assets deferred %}
+    {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
+{% endblock %}
+</head>
+<body>
+    <section class="website-wrapper">
+        {% block header %}
+            {% include 'partials/header.html.twig' %}
+        {% endblock %}
+
+        {% block body %}
+            {% include 'partials/body.html.twig' %}
+        {% endblock %}
+
+        {% block footer %}
+            {% include 'partials/footer.html.twig' %}
+        {% endblock %}
+
+        {% block bottom %}
+            {{ assets.js('bottom')|raw }}
+        {% endblock %}
+    </section>
+</body>
+</html>

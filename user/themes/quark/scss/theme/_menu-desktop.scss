@@ -1,0 +1,81 @@
+.menu-desktop-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .navbar {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        justify-content: flex-end;
+        transition: all 0.3s;
+
+        .nav-links {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            min-width: 400px;
+            width: 100%;
+            max-width: 500px;
+            gap: 0.5rem;
+    
+            li {
+                border: none;
+                position: relative;
+                padding: 0.8rem 1rem;
+                cursor: pointer;
+                   
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    background: linear-gradient(90deg, #76c7f7, #4a90e2);
+                    transition: width 0.3s ease;
+                }
+            
+                &::before {
+                    top: 0;
+                    left: 0;
+                }
+            
+                &::after {
+                    bottom: 0;
+                    right: 0;
+                }
+            
+                &:hover {
+                    color: #0056b3;
+            
+                    &::before,
+                    &::after {
+                        width: 100%;
+                    }
+                }
+    
+                button {
+                    a {
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+    
+            .selected {
+                color: #0056b3;
+    
+                &::before,
+                &::after {
+                    content: '';
+                        width: 100%;
+                        position: absolute;
+                        height: 2px;
+                        background: linear-gradient(90deg, #76c7f7, #4a90e2);
+                        transition: width 0.3s ease;
+                }
+            }
+        }
+    }
+}

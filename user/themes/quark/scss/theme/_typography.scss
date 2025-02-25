@@ -1,0 +1,42 @@
+/* mobile */
+@media (max-width: 480px) {
+  html {
+      font-size: 13px; /* 1rem = 13px */
+  }
+}
+
+/* tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+      font-size: 15px; /* 1rem = 15px */
+  }
+}
+
+/* laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+  html {
+      font-size: 16px; /* 1rem = 16px */
+  }
+}
+
+/* UHD */
+@media (min-width: 1025px) {
+  html {
+      font-size: 18px; /* 1rem = 18px */
+  }
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.paragraph {
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+
+.quote {
+  line-height: 1.6rem;
+  font-size: 1rem;
+  text-align: center;
+}

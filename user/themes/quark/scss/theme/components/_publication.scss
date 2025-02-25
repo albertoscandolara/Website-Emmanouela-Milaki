@@ -1,0 +1,122 @@
+.publication-wrapper {
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--logo-color);
+    box-shadow: 0 0 .5rem 0 #8ac5d4;
+
+    .publication {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .header,
+        .body,
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .header {
+            min-height: 0;
+            gap: 2rem;
+
+            .authors {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+                justify-content: center;
+
+                .author {
+                    padding: 0.5rem 1rem;
+                    background-color: var(--text-color);
+                    color: white;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+        
+        .body {
+            flex: 1;
+            
+            .description {
+                text-align: center;
+            }
+        }
+
+        .footer {
+            min-height: 0;
+            align-items: end;
+
+            .date,
+            .conference,
+            .link {
+                text-align: end;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .publication-wrapper {
+        .publication {
+
+            .header,
+            .body,
+            .footer {
+            }
+    
+            .header {
+    
+                .authors {
+    
+                    .author {
+                    }
+                }
+            }
+            
+            .body {
+                
+                .description {
+    
+                }
+            }
+    
+            .footer {
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) { 
+    .publication-wrapper {
+        .publication {
+
+            .header,
+            .body,
+            .footer {
+            }
+    
+            .header {
+    
+                .authors {
+    
+                    .author {
+                    }
+                }
+            }
+            
+            .body {
+                
+                .description {
+    
+                }
+            }
+    
+            .footer {
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<header>
+    <section class="header-container">
+        <div class="logo-section">
+            <img src="{{ url('theme://images/icons/logos/logo/logo.svg') }}" alt="logo" />
+            <div class="summmary">
+                <h3>Emmanuela Milaki, MA</h3>
+                <span>Individual & Family Therapist</span>
+            </div>
+        </div>
+        <div class="menu-desktop-container">
+            {% block menu_desktop %}
+                {% include 'partials/menu_desktop.html.twig' %}
+            {% endblock %}
+        </div>
+        <div class="menu-mobile-container">
+            {% block menu_mobile %}
+                {% include 'partials/menu_mobile.html.twig' %}
+            {% endblock %}
+        </div>
+    </section>
+</header>

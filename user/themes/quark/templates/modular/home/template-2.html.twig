@@ -1,0 +1,34 @@
+<article class="template-2-wrapper {{ odd_even_class }}">
+    <div class="template-2">
+        {% if module.header.item_title %}
+            <h2 class="title">{{ module.header.item_title }}</h2>
+        {% endif %}
+        {% if module.header.item_image %}
+            {% set localImage = module.media[module.header.item_image] %}
+            {% if localImage %}
+                {% set imageUrl = localImage.url %}
+            {% else %}
+                {% set imageUrl = theme_url ~ '/images/' ~ module.header.item_image %}
+            {% endif %}
+                <img class="image" src="{{ imageUrl }}" alt="{{ module.header.item_title }}">
+                </img>
+        {% endif %}
+        {% if module.header.blockquote_quote %}
+            <div class="blockquote-container">
+                {% set image = module.media[module.header.blockquote_image] %}
+                {% include 'partials/components/blockquote.html.twig' with {
+                    author: module.header.blockquote_author,
+                    image: image,
+                    quote: module.header.blockquote_quote,
+                    source: module.header.blockquote_source,
+                } %}
+            </div>
+        {% endif %}
+        {% if module.header.item_paragraph %}
+            <div class="paragraph-container">
+                <p class="paragraph">{{ module.header.item_paragraph|raw }}</p>
+            </div>
+        {% endif %}
+    </div>
+</article>
+

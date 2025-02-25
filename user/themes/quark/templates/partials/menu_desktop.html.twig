@@ -1,0 +1,15 @@
+{% import 'macros/macros.html.twig' as macros %}
+<section class="menu-desktop-wrapper">
+    <nav class="navbar">
+        <ul class="nav-links">
+            {% for page in pages.children.visible %}
+            <li class="{% if page.active or page.activeChild %}selected{% endif %}"
+                title="{{ page.menu ?: page.title }}">
+                <button>
+                    <a href="{{ page.url }}">{{ page.menu ?: page.title }}</a>
+                </button>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</section>

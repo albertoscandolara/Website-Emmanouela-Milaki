@@ -1,0 +1,78 @@
+.blockquote-wrapper {
+  container: blockquote-wrapper / inline-size;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 .5rem 0 var(--logo-color);
+
+  .blockquote {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    .left {
+      background-color: var(--logo-color);
+      width: 10%;
+      max-width: 200px;
+    }
+    .right {
+      position: relative;
+      padding: 4%;
+      min-width: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .quote-symbol {
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        font-size: 1.5rem;
+      }
+
+      .quote-container {
+        max-width: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-self: center;
+
+        .upper-container,
+        .lower-container {
+          width: 100%;
+          display: flex;
+        }
+
+        .upper-container {
+          justify-content: center;         
+        }
+
+        .lower-container {
+          flex-direction: column;
+
+          .author,
+          .source {
+            text-align: end;
+          }
+        }
+      }
+    }
+
+    .author-pic-container {
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      transform: translateY(-50%);
+      max-width: 15%;
+      max-height: 50%;
+      aspect-ratio: 1;
+
+      img {
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+  }
+}

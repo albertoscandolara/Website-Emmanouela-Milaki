@@ -1,0 +1,26 @@
+<article class="publications-wrapper">
+    <div class="publications">
+        {% if module.header.item_title %}
+            <h2 class="title">{{ module.header.item_title }}</h2>
+        {% endif %}
+        <section class="body">
+            <ul class="publications-list">
+                {% for publication in module.header.publications %}
+                <li class="publication-item">
+                        {% include 'partials/components/publication.html.twig' with {
+                            title: publication.title,
+                            authors: publication.authors,
+                            date: publication.date,
+                            journal: publication.journal,
+                            volume: publication.volume,
+                            pages: publication.pages,
+                            conference: publication.conference,
+                            description: publication.description,
+                            link: publication.link
+                        } %}<p>{{ paragraph }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</article>

@@ -1,0 +1,34 @@
+{% import 'macros/macros.html.twig' as macros %}
+<section class="menu-mobile-wrapper">
+    <label for="mobile-menu-toggle" class="mobile-menu-icon">
+        ☰
+    </label>
+    <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+    
+    <div class="mobile-menu-popup">
+        <section class="header">
+            <section class="left"></section>
+            <section class="right">
+                <label for="mobile-menu-toggle" class="mobile-menu-icon">
+                    &#10005;
+                </label>
+                <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
+            </section>
+        </section>
+        <section class="body">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    {% for page in pages.children.visible %}
+                    <li class="{% if page.active or page.activeChild %}selected{% endif %}"
+                        title="{{ page.menu ?: page.title }}">
+                        <button>
+                            <a href="{{ page.url }}">{{ page.menu ?: page.title }}</a>
+                        </button>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </section>
+        <section class="footer"></section>
+    </div>
+</section>

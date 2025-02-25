@@ -1,0 +1,12 @@
+<section class="body-container">
+    <div class="page-sections">
+        {% for module in page.collection() %}
+            {% set index = loop.index0 %}
+            {% set odd_even_class = (index is even) ? 'even' : 'odd' %}
+            
+            <section class="page-section {{ odd_even_class }}">
+                {% include module.template ~ '.html.twig' with { module: module, odd_even_class: odd_even_class } %}
+            </section>
+        {% endfor %}
+    </div>
+</section>

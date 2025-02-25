@@ -1,0 +1,16 @@
+.body-container {    
+    .page-sections {
+        display: flex;
+        flex-direction: column;
+    
+        .page-section {
+            &.odd {
+                background-color: #e0f1f5;
+            }
+            
+            &.even {
+                background-color: #ffffff;
+            }
+        }
+    }
+}

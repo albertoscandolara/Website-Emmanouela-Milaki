@@ -1,0 +1,32 @@
+<section class="blockquote-wrapper">
+    <div class="blockquote">
+        <div class="left"></div>
+        <div class="right">
+            <div class="quote-symbol">
+                &#10077;
+            </div>
+            <div class="quote-container">
+                <div class="upper-container">
+                    {% if quote %}
+                        <blockquote class="quote" cite="{{ quote|raw }}">
+                            {{ quote|raw }}
+                        </blockquote>
+                    {% endif %}
+                </div>
+                <div class="lower-container">
+                    {% if author %}
+                        <div class="author"><cite>{{ author }}</cite></div>
+                    {% endif %}
+                    {% if source %}
+                        <div class="source"><span>{{ source }}</span></div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% if image %}
+            <div class="author-pic-container">
+                <img src="{{ image.url }}" alt="{{ author|e }}">
+            </div>
+        {% endif %}
+    </div>
+</section>

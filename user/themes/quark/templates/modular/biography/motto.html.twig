@@ -1,0 +1,20 @@
+<article class="motto-wrapper">
+    <div class="motto">
+        {% if module.header.item_title %}
+            <h2 class="title">{{ module.header.item_title }}</h2>
+        {% endif %}
+        <section class="body">
+            {% if module.header.blockquote_quote %}
+                <div class="blockquote-container">
+                    {% set image = module.media[module.header.blockquote_image] %}
+                    {% include 'partials/components/blockquote.html.twig' with {
+                        author: module.header.blockquote_author,
+                        image: image,
+                        quote: module.header.blockquote_quote,
+                        source: module.header.blockquote_source,
+                    } %}
+                </div>
+            {% endif %}
+        </section>
+    </div>
+</article>

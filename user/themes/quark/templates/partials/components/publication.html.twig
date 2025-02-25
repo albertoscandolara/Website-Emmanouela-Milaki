@@ -1,0 +1,36 @@
+<section class="publication-wrapper">
+    <div class="publication">
+        <div class="header">
+            {% if title %}
+                <h4>{{ title }}</h4>
+            {% endif %}
+
+            {% if authors %}
+                <ul class="authors">
+                    {% for author in authors %}
+                        <li class="author">{{ author }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+        <div class="body">
+            {% if description %}
+                <div class="description">{{ description }}</div>
+            {% endif %}
+        </div>
+        <div class="footer">
+            {% if date %}
+                <div class="date">{{ date }}</div>
+            {% endif %}
+
+            {% if conference %}
+                <div class="conference">{{ conference }}</div>
+            {% endif %}
+
+            {% if link  %}
+                <p class="link"><a href="{{ link }}" target="_blank">Read More</a></p>
+            {% endif %}
+            
+        </div>
+    </div>
+</section>

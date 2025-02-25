@@ -1,0 +1,47 @@
+.motto-wrapper {
+    .motto {
+        padding: 10% 4%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        .title {
+
+        }
+
+        .body {      
+            width: 100%;
+
+            .blockquote-container {}
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .motto-wrapper {
+        .motto {
+            
+            .title {}
+    
+            .body {
+                .blockquote-container {}
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) { 
+    .motto-wrapper {
+        .motto {
+
+            .title {}
+    
+            .body {
+                .blockquote-container {}
+            }
+        }
+    }
+}

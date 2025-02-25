@@ -1,0 +1,63 @@
+.biography-wrapper {
+    .biography {
+        padding: 10% 4%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        .title {}
+
+        .body {      
+            width: 100%;
+            
+            .paragraphs {
+                display: flex;
+                flex-direction: column;
+                gap: 4rem;
+
+                .paragraph {
+                    display: flex;
+
+                    &:nth-child(odd) {    
+                        padding-right: 20%;
+                        text-align: left;
+                    }
+
+                    &:nth-child(even) {
+                        padding-left: 20%;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .biography-wrapper {
+        .biography { 
+
+            .body {
+                .paragraphs {
+                    .paragraph {}
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) { 
+    .biography-wrapper {
+        .biography {   
+
+            .body {
+                .paragraphs {
+                    .paragraph {}
+                }
+            }
+        }
+    }
+}
