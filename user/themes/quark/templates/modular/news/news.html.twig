@@ -1,0 +1,32 @@
+<article class="news-wrapper">
+    <div class="news">
+        {% if module.header.item_title %}
+            <h2 class="title">{{ module.header.item_title }}</h2>
+        {% endif %}
+        <section class="body">
+            <ul class="news-list">
+                {% for initiative in module.header.initiatives %}
+                <li class="news-item">
+                    {% if initiative.image %}
+                        {% set localImage = module.media[initiative.image] %}
+                        {% if localImage %}
+                            {% set imageUrl = localImage.url %}
+                        {% else %}
+                            {% set imageUrl = theme_url ~ '/images/' ~ initiative.image %}
+                        {% endif %}
+                    {% endif %}
+                    {% include 'partials/components/initiative.html.twig' with {
+                        title: initiative.title,
+                        subtitle: initiative.subtitle,
+                        date: initiative.date,
+                        description: initiative.description,
+                        image: imageUrl,
+                        link_url: initiative.link_url,
+                        link_text: initiative.link_text,
+                    } %}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</article>

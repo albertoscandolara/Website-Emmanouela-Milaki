@@ -1,0 +1,117 @@
+.initiative-wrapper {
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--logo-color);
+    box-shadow: 0 0 .5rem 0 #8ac5d4;
+
+    .initiative {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .header,
+        .body,
+        .footer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            min-height: 0;
+            gap: 1rem;
+            height: 20%;
+            
+            .subtitle-container {
+                padding: 0.5rem 1rem;
+                background-color: var(--text-color);
+                color: white;
+            }
+        }
+        
+        .body {
+            flex: 1;
+            gap: 1rem;
+
+            .image-container {
+                aspect-ratio: 1;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+            
+            .description {
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+        }
+
+        .footer {
+            min-height: 0;
+            align-items: end;
+            padding-top: 1rem;
+            border-top: 1px solid var(--text-color);
+
+            .date,
+            .conference,
+            .link {
+                text-align: end;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .initiative-wrapper {
+        .initiative {
+
+            .header,
+            .body,
+            .footer {
+            }
+    
+            .header {
+                .subtitle-container {}
+            }
+            
+            .body {
+                
+                .description {
+    
+                }
+            }
+    
+            .footer {
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) { 
+    .initiative-wrapper {
+        .initiative {
+
+            .header,
+            .body,
+            .footer {
+            }
+    
+            .header {
+                .subtitle-container {}
+            }
+            
+            .body {
+                
+                .description {
+    
+                }
+            }
+    
+            .footer {
+            }
+        }
+    }
+}

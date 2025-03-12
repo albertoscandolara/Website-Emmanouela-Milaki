@@ -1,3 +1,0 @@
-1740506860
-04.contacts
-O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:8:"contacts";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:0:{}s:11:"frontmatter";s:0:"";s:8:"markdown";s:0:"";}s:7:"storage";a:7:{s:3:"key";s:8:"contacts";s:11:"storage_key";s:11:"04.contacts";s:8:"template";s:7:"modular";s:17:"storage_timestamp";i:1738010901;s:8:"markdown";a:2:{s:2:"en";a:1:{s:7:"modular";i:1736004039;}s:2:"gr";a:1:{s:7:"modular";i:1736004222;}}s:8:"children";a:4:{s:4:"_map";b:0;s:11:"_newsletter";b:0;s:7:"_social";b:0;s:12:"_suggestions";b:0;}s:8:"checksum";s:32:"d0d9d953a5e4fcedd83efe11cf653f6f";}}

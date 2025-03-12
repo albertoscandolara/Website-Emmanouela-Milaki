@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/data/flex/indexes/pages.json',
-    'modified' => 1740518439,
-    'size' => 4238,
+    'modified' => 1741731341,
+    'size' => 4753,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1740518439,
-        'count' => 17,
+        'timestamp' => 1741731341,
+        'count' => 19,
         'index' => [
             '' => [
                 'key' => '',
@@ -95,14 +95,14 @@ return [
             '02.services' => [
                 'key' => 'services',
                 'storage_key' => '02.services',
-                'template' => 'default',
-                'storage_timestamp' => 1735907821,
+                'template' => 'modular',
+                'storage_timestamp' => 1741731341,
                 'markdown' => [
                     'en' => [
-                        'default' => 1735907821
+                        'modular' => 1741731341
                     ]
                 ],
-                'checksum' => '6059b6c368fa919d79333b3344265a2b'
+                'checksum' => 'e629861729ecd9363bd2b1f6e918d3aa'
             ],
             '03.biography' => [
                 'key' => 'biography',
@@ -229,14 +229,42 @@ return [
             '05.news' => [
                 'key' => 'news',
                 'storage_key' => '05.news',
-                'template' => 'default',
-                'storage_timestamp' => 1738010901,
+                'template' => 'modular',
+                'storage_timestamp' => 1741385597,
                 'markdown' => [
                     'en' => [
-                        'default' => 1737838488
+                        'modular' => 1741385575
                     ]
                 ],
-                'checksum' => 'ddf501611ef19039461a4810c09339c0'
+                'children' => [
+                    '01._news' => 1741385463,
+                    '02._newsletter' => 1741381846
+                ],
+                'checksum' => 'ff9cd45cb8148e0f6d77db1a7dfbb869'
+            ],
+            '05.news/01._news' => [
+                'key' => 'news/_news',
+                'storage_key' => '05.news/01._news',
+                'template' => 'features',
+                'storage_timestamp' => 1741422426,
+                'markdown' => [
+                    'en' => [
+                        'features' => 1741421367
+                    ]
+                ],
+                'checksum' => '0e77ea2ab5daf415fd9cf9d956a55817'
+            ],
+            '05.news/02._newsletter' => [
+                'key' => 'news/_newsletter',
+                'storage_key' => '05.news/02._newsletter',
+                'template' => 'features',
+                'storage_timestamp' => 1741423609,
+                'markdown' => [
+                    'en' => [
+                        'features' => 1741423609
+                    ]
+                ],
+                'checksum' => '3788b02b3eedcef14b68e9bc2be9414c'
             ]
         ]
     ]

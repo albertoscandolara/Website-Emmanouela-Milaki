@@ -1,0 +1,38 @@
+<article class="services-wrapper">
+    <div class="services">
+        <section class="body">
+            <ul class="services-list">
+                {% for service in module.header.services %}
+                <li class="services-item">
+                    {% if service.icon %}
+                        {% set localIcon = module.media[service.icon] %}
+                        {% if localIcon %}
+                            {% set iconUrl = localIcon.url %}
+                        {% else %}
+                            {% set iconUrl = theme_url ~ '/images/' ~ service.icon %}
+                        {% endif %}
+                    {% endif %}
+                    {% if service.image %}
+                        {% set localImage = module.media[service.image] %}
+                        {% if localImage %}
+                            {% set imageUrl = localImage.url %}
+                        {% else %}
+                            {% set imageUrl = theme_url ~ '/images/' ~ service.image %}
+                        {% endif %}
+                    {% endif %}
+                    {% include 'partials/components/service.html.twig' with {
+                        title: service.title,
+                        icon: iconUrl,
+                        image: imageUrl,
+                        short_description: service.short_description,
+                        target: service.target,
+                        method: service.method,
+                        outcomes: service.outcomes,
+                        description: service.description,
+                    } %}
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</article>

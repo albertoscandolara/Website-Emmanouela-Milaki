@@ -1,0 +1,51 @@
+<section class="service-wrapper">
+    <div class="service">
+        <div class="header">
+            <div class="header-top">
+                {% if icon %}
+                    <div class="icon-container">
+                        <img src="{{ icon }}" class="icon"></img>
+                    </div>
+                {% endif %}
+                {% if title %}
+                    <div class="title-container">
+                        <h2>{{ title }}</h2>
+                    </div>
+                {% endif %}
+            </div>
+            {% if short_description %}
+                <div class="short-description">{{ short_description|raw }}</div>
+            {% endif %}
+        </div>
+        <div class="body">
+            {% if target %}
+                <div class="body-block target-container">
+                    <span class="label">Intended for:</span>
+                    <span>{{ target|raw }}</span>
+                </div>
+            {% endif %}
+            {% if method %}
+                <div class="body-block method-container">
+                    <span class="label">Approach used:</span>
+                    <span>{{ method|raw }}</span>
+                </div>
+            {% endif %}
+            {% if outcomes %}
+                <div class="body-block outcomes-container">
+                    <span class="label">What you gain:</span>
+                    <span>{{ outcomes|raw }}</span>
+                </div>
+            {% endif %}
+        </div>
+        <div class="footer">
+            {% if description %}
+                <div class="description">{{ description|raw }}</div>
+            {% endif %}
+            {% if image %}
+                <div class="image-container">
+                    <img src="{{ image }}" class="image"></img>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

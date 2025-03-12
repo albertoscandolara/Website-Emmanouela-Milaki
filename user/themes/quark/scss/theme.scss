@@ -15,6 +15,8 @@
 // Components
 @use 'theme/components/blockquote';
 @use 'theme/components/publication';
+@use 'theme/components/initiative';
+@use 'theme/components/service';
 
 // Header
 @use 'theme/header';
@@ -29,11 +31,16 @@
 @use 'theme/home/template-1';
 @use 'theme/home/template-2';
 
+// Services
+@use 'theme/services/_services';
+
 // Biography
 @use 'theme/biography/_motto';
 @use 'theme/biography/_biography';
 @use 'theme/biography/_publications';
 
+// News
+@use 'theme/news/news';
 
 // Footer
 @use 'theme/footer';

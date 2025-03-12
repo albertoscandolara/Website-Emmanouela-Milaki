@@ -9,6 +9,8 @@ header {
     display: flex;
     gap: 3rem;
     background-color: white;
+    border: 1px solid var(--logo-color);
+    border-top: none;
     box-shadow: 0 0 0.5rem 0 #8ac5d4;
     border-radius: 0 0 0.5rem 0.5rem;
 
