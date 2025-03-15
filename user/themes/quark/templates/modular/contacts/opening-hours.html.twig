@@ -1,0 +1,22 @@
+<article class="opening-hours-wrapper">
+    <div class="opening-hours">
+        <div class='title'>
+            <h4>{{ module.header.title }}</h4>
+        </div>
+        <table>
+            <tbody>
+                {% for day in module.header.opening_hours %}
+                    <tr>
+                        <td class="day">{{ day.day }}</td>
+                        {% if day.is_open %}
+                            <td>{{ day.open }}</td>
+                            <td>{{ day.close }}</td>
+                        {% else %}
+                            <td colspan="2">Closed</td>
+                        {% endif %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</article>

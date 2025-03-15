@@ -35,23 +35,24 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
         $macros = $this->macros;
         // line 1
         echo "<section class=\"service-wrapper\">
-    <div class=\"service\">
+    ";
+        // line 2
+        if (($context["icon"] ?? null)) {
+            // line 3
+            echo "        <div class=\"icon-container\">
+            <img src=\"";
+            // line 4
+            echo twig_escape_filter($this->env, ($context["icon"] ?? null), "html", null, true);
+            echo "\" class=\"icon\"></img>
+        </div>
+    ";
+        }
+        // line 7
+        echo "    <div class=\"service\">
         <div class=\"header\">
             <div class=\"header-top\">
                 ";
-        // line 5
-        if (($context["icon"] ?? null)) {
-            // line 6
-            echo "                    <div class=\"icon-container\">
-                        <img src=\"";
-            // line 7
-            echo twig_escape_filter($this->env, ($context["icon"] ?? null), "html", null, true);
-            echo "\" class=\"icon\"></img>
-                    </div>
-                ";
-        }
         // line 10
-        echo "                ";
         if (($context["title"] ?? null)) {
             // line 11
             echo "                    <div class=\"title-container\">
@@ -78,65 +79,65 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
         <div class=\"body\">
             ";
         // line 21
-        if (($context["target"] ?? null)) {
+        if (($context["image"] ?? null)) {
             // line 22
+            echo "                <div class=\"image-container\">
+                    <img src=\"";
+            // line 23
+            echo twig_escape_filter($this->env, ($context["image"] ?? null), "html", null, true);
+            echo "\" class=\"image\"></img>
+                </div>
+            ";
+        }
+        // line 26
+        echo "            ";
+        if (($context["target"] ?? null)) {
+            // line 27
             echo "                <div class=\"body-block target-container\">
-                    <span class=\"label\">Intended For:</span>
+                    <span class=\"label\">Intended for:</span>
                     <span>";
-            // line 24
+            // line 29
             echo ($context["target"] ?? null);
             echo "</span>
                 </div>
             ";
         }
-        // line 27
+        // line 32
         echo "            ";
         if (($context["method"] ?? null)) {
-            // line 28
+            // line 33
             echo "                <div class=\"body-block method-container\">
-                    <span class=\"label\">Approach Used:</span>
+                    <span class=\"label\">Approach used:</span>
                     <span>";
-            // line 30
+            // line 35
             echo ($context["method"] ?? null);
             echo "</span>
                 </div>
             ";
         }
-        // line 33
+        // line 38
         echo "            ";
         if (($context["outcomes"] ?? null)) {
-            // line 34
+            // line 39
             echo "                <div class=\"body-block outcomes-container\">
-                    <span class=\"label\">What You Gain:</span>
+                    <span class=\"label\">What you gain:</span>
                     <span>";
-            // line 36
+            // line 41
             echo ($context["outcomes"] ?? null);
             echo "</span>
                 </div>
             ";
         }
-        // line 39
+        // line 44
         echo "        </div>
         <div class=\"footer\">
             ";
-        // line 41
+        // line 46
         if (($context["description"] ?? null)) {
-            // line 42
+            // line 47
             echo "                <div class=\"description\">";
             echo ($context["description"] ?? null);
             echo "</div>
-            ";
-        }
-        // line 44
-        echo "            ";
-        if (($context["image"] ?? null)) {
-            // line 45
-            echo "                <div class=\"image-container\">
-                    <img src=\"";
-            // line 46
-            echo twig_escape_filter($this->env, ($context["image"] ?? null), "html", null, true);
-            echo "\" class=\"image\"></img>
-                </div>
             ";
         }
         // line 49
@@ -157,20 +158,20 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  143 => 49,  137 => 46,  134 => 45,  131 => 44,  125 => 42,  123 => 41,  119 => 39,  113 => 36,  109 => 34,  106 => 33,  100 => 30,  96 => 28,  93 => 27,  87 => 24,  83 => 22,  81 => 21,  77 => 19,  71 => 17,  69 => 16,  66 => 15,  60 => 12,  57 => 11,  54 => 10,  48 => 7,  45 => 6,  43 => 5,  37 => 1,);
+        return array (  144 => 49,  138 => 47,  136 => 46,  132 => 44,  126 => 41,  122 => 39,  119 => 38,  113 => 35,  109 => 33,  106 => 32,  100 => 29,  96 => 27,  93 => 26,  87 => 23,  84 => 22,  82 => 21,  78 => 19,  72 => 17,  70 => 16,  67 => 15,  61 => 12,  58 => 11,  56 => 10,  51 => 7,  45 => 4,  42 => 3,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<section class=\"service-wrapper\">
+    {% if icon %}
+        <div class=\"icon-container\">
+            <img src=\"{{ icon }}\" class=\"icon\"></img>
+        </div>
+    {% endif %}
     <div class=\"service\">
         <div class=\"header\">
             <div class=\"header-top\">
-                {% if icon %}
-                    <div class=\"icon-container\">
-                        <img src=\"{{ icon }}\" class=\"icon\"></img>
-                    </div>
-                {% endif %}
                 {% if title %}
                     <div class=\"title-container\">
                         <h2>{{ title }}</h2>
@@ -182,21 +183,26 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
             {% endif %}
         </div>
         <div class=\"body\">
+            {% if image %}
+                <div class=\"image-container\">
+                    <img src=\"{{ image }}\" class=\"image\"></img>
+                </div>
+            {% endif %}
             {% if target %}
                 <div class=\"body-block target-container\">
-                    <span class=\"label\">Intended For:</span>
+                    <span class=\"label\">Intended for:</span>
                     <span>{{ target|raw }}</span>
                 </div>
             {% endif %}
             {% if method %}
                 <div class=\"body-block method-container\">
-                    <span class=\"label\">Approach Used:</span>
+                    <span class=\"label\">Approach used:</span>
                     <span>{{ method|raw }}</span>
                 </div>
             {% endif %}
             {% if outcomes %}
                 <div class=\"body-block outcomes-container\">
-                    <span class=\"label\">What You Gain:</span>
+                    <span class=\"label\">What you gain:</span>
                     <span>{{ outcomes|raw }}</span>
                 </div>
             {% endif %}
@@ -204,11 +210,6 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
         <div class=\"footer\">
             {% if description %}
                 <div class=\"description\">{{ description|raw }}</div>
-            {% endif %}
-            {% if image %}
-                <div class=\"image-container\">
-                    <img src=\"{{ image }}\" class=\"image\"></img>
-                </div>
             {% endif %}
         </div>
     </div>

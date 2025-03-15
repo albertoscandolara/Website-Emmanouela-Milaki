@@ -23,8 +23,6 @@
             li {
                 border: none;
                 position: relative;
-                padding: 0.8rem 1rem;
-                cursor: pointer;
                    
                 &::before,
                 &::after {
@@ -57,6 +55,8 @@
     
                 button {
                     a {
+                        display: block;
+                        padding: 0.8rem 1rem;
                         text-decoration: none;
                         text-transform: uppercase;
                     }

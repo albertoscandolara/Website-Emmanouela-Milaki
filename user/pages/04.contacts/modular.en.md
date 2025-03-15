@@ -3,7 +3,6 @@ title: Contacts
 menu: Contacts
 slug: contacts
 onpage_menu: true
-body_classes: "modular fullwidth"
 content:
   items: "@self.modular"
   order:
@@ -11,8 +10,13 @@ content:
     dir: asc
     custom:
       - _map
+      - _opening-hours
+      - _phone
       - _social
+      - _mail
       - _newsletter
-      - _suggestions
   routable: true
+process:
+  twig: true
+  markdown: false
 ---

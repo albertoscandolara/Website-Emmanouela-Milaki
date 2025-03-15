@@ -42,5 +42,13 @@
 // News
 @use 'theme/news/news';
 
+// Contacts
+@use 'theme/contacts/map';
+@use 'theme/contacts/opening-hours';
+@use 'theme/contacts/phone';
+@use 'theme/contacts/social';
+@use 'theme/contacts/mail';
+@use 'theme/contacts/newsletter';
+
 // Footer
 @use 'theme/footer';

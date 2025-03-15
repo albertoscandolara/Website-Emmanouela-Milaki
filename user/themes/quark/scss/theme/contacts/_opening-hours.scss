@@ -1,0 +1,70 @@
+.opening-hours-wrapper {
+    .opening-hours {
+        padding: 10% 4%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        .title {
+        }
+
+        table {
+            tbody {
+                tr {
+                    td {
+                        padding: 0.5rem 1rem;
+
+                        &.day {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .opening-hours-wrapper {
+        .opening-hours {
+            .title {
+            }
+    
+            table {
+                tbody {
+                    tr {
+                        td {
+    
+                            &.day {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) { 
+    .opening-hours-wrapper {
+        .opening-hours {
+            .title {
+            }
+    
+            table {
+                tbody {
+                    tr {
+                        td {
+    
+                            &.day {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

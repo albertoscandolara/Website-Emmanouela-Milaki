@@ -1,0 +1,13 @@
+<article class="social-wrapper">
+    <section class="social">
+        <ul class="social-media">
+            {% for link in module.header.social_links %}
+                <li title="{{ link.title }}">
+                    <a href="{{ link.url }}" target="_blank" aria-label="{{ link.aria_label }}">
+                        <img src="{{ url('theme://images/icons/logos/' ~ link.icon) }}" alt="{{ link.aria_label }}" />
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</article>

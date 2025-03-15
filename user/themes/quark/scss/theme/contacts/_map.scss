@@ -1,0 +1,33 @@
+.map-wrapper {
+    .map {
+        padding: 2% 4%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+
+        .map-iframe {
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .map-wrapper {
+        .map {
+            .map-iframe {
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) { 
+    .map-wrapper {
+        .map {
+            .map-iframe {
+            }
+        }
+    }
+}

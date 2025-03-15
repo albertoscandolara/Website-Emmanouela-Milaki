@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/data/flex/indexes/pages.json',
-    'modified' => 1741731341,
-    'size' => 4753,
+    'modified' => 1742046405,
+    'size' => 5545,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1741731341,
-        'count' => 19,
+        'timestamp' => 1742046405,
+        'count' => 22,
         'index' => [
             '' => [
                 'key' => '',
@@ -96,13 +96,28 @@ return [
                 'key' => 'services',
                 'storage_key' => '02.services',
                 'template' => 'modular',
-                'storage_timestamp' => 1741731341,
+                'storage_timestamp' => 1741731564,
                 'markdown' => [
                     'en' => [
-                        'modular' => 1741731341
+                        'modular' => 1741731564
                     ]
                 ],
-                'checksum' => 'e629861729ecd9363bd2b1f6e918d3aa'
+                'children' => [
+                    '01._services' => 1741963212
+                ],
+                'checksum' => 'd3ee2f47cd55842ef0cdf5311c165d3a'
+            ],
+            '02.services/01._services' => [
+                'key' => 'services/_services',
+                'storage_key' => '02.services/01._services',
+                'template' => 'features',
+                'storage_timestamp' => 1741963212,
+                'markdown' => [
+                    'en' => [
+                        'features' => 1741963143
+                    ]
+                ],
+                'checksum' => '6f3471849dd38a1f70d3591c016829ee'
             ],
             '03.biography' => [
                 'key' => 'biography',
@@ -161,70 +176,93 @@ return [
                 'key' => 'contacts',
                 'storage_key' => '04.contacts',
                 'template' => 'modular',
-                'storage_timestamp' => 1738010901,
+                'storage_timestamp' => 1742027390,
                 'markdown' => [
                     'en' => [
-                        'modular' => 1736004039
-                    ],
-                    'gr' => [
-                        'modular' => 1736004222
+                        'modular' => 1741968990
                     ]
                 ],
                 'children' => [
-                    '_map' => 1735935555,
-                    '_newsletter' => 1735935552,
-                    '_social' => 1735935547,
-                    '_suggestions' => 1735935542
+                    '01._map' => 1741969341,
+                    '02._opening-hours' => 1742027274,
+                    '03._phone' => 1742026864,
+                    '04._social' => 1742026543,
+                    '05._mail' => 1741968841,
+                    '06._newsletter' => 1741968871
                 ],
-                'checksum' => 'd0d9d953a5e4fcedd83efe11cf653f6f'
+                'checksum' => '8368a747833fab472abfa130a9a7fb0e'
             ],
-            '04.contacts/_map' => [
+            '04.contacts/01._map' => [
                 'key' => 'contacts/_map',
-                'storage_key' => '04.contacts/_map',
+                'storage_key' => '04.contacts/01._map',
                 'template' => 'map',
-                'storage_timestamp' => 1735935555,
+                'storage_timestamp' => 1741969341,
                 'markdown' => [
                     'en' => [
-                        'map' => 1735935555
+                        'map' => 1741969341
                     ]
                 ],
-                'checksum' => 'df9f3fd7f2d2b626b7ed17cd0e8d4e26'
+                'checksum' => '1ae17fdad38061accbf11b230d8dc2ba'
             ],
-            '04.contacts/_newsletter' => [
-                'key' => 'contacts/_newsletter',
-                'storage_key' => '04.contacts/_newsletter',
-                'template' => 'newsletter',
-                'storage_timestamp' => 1735935552,
+            '04.contacts/02._opening-hours' => [
+                'key' => 'contacts/_opening-hours',
+                'storage_key' => '04.contacts/02._opening-hours',
+                'template' => 'features',
+                'storage_timestamp' => 1742045706,
                 'markdown' => [
                     'en' => [
-                        'newsletter' => 1735935552
+                        'features' => 1742045706
                     ]
                 ],
-                'checksum' => 'f3671a5f89d7a56a08b38184b5eb80d3'
+                'checksum' => '68beca46674c588fcd412cc3da2ac84e'
             ],
-            '04.contacts/_social' => [
+            '04.contacts/03._phone' => [
+                'key' => 'contacts/_phone',
+                'storage_key' => '04.contacts/03._phone',
+                'template' => 'features',
+                'storage_timestamp' => 1742027504,
+                'markdown' => [
+                    'en' => [
+                        'features' => 1742027504
+                    ]
+                ],
+                'checksum' => '6bdcf63e5cbaba2c0a42260345f76f14'
+            ],
+            '04.contacts/04._social' => [
                 'key' => 'contacts/_social',
-                'storage_key' => '04.contacts/_social',
+                'storage_key' => '04.contacts/04._social',
                 'template' => 'social',
-                'storage_timestamp' => 1735935547,
+                'storage_timestamp' => 1742026543,
                 'markdown' => [
                     'en' => [
-                        'social' => 1735935547
+                        'social' => 1742026543
                     ]
                 ],
-                'checksum' => '7c1e765b9734d0d84cab23b84020be15'
+                'checksum' => 'b29ef8cd4917939a8ad355d6e8453913'
             ],
-            '04.contacts/_suggestions' => [
-                'key' => 'contacts/_suggestions',
-                'storage_key' => '04.contacts/_suggestions',
-                'template' => 'suggestions',
-                'storage_timestamp' => 1735935542,
+            '04.contacts/05._mail' => [
+                'key' => 'contacts/_mail',
+                'storage_key' => '04.contacts/05._mail',
+                'template' => 'features',
+                'storage_timestamp' => 1741968841,
                 'markdown' => [
                     'en' => [
-                        'suggestions' => 1735935542
+                        'features' => 1741968841
                     ]
                 ],
-                'checksum' => '447ce05ef7cb437ae70d59eb787e8036'
+                'checksum' => '73e3bede2ff7175df8814c9325a7b0ee'
+            ],
+            '04.contacts/06._newsletter' => [
+                'key' => 'contacts/_newsletter',
+                'storage_key' => '04.contacts/06._newsletter',
+                'template' => 'features',
+                'storage_timestamp' => 1742027549,
+                'markdown' => [
+                    'en' => [
+                        'features' => 1742027549
+                    ]
+                ],
+                'checksum' => '9eaa8db6e97ae35646f6d19f87300ad2'
             ],
             '05.news' => [
                 'key' => 'news',
