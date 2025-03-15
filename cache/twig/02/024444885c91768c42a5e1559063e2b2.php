@@ -44,8 +44,14 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
         echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->urlFunc("theme://images/icons/logos/logo/logo.svg"), "html", null, true);
         echo "\" alt=\"logo\" />
             <div class=\"summmary\">
-                <h3>Emmanuela Milaki, MA</h3>
-                <span>Individual & Family Therapist</span>
+                <h3>";
+        // line 6
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "HEADER_NAME"), "html", null, true);
+        echo "</h3>
+                <span>";
+        // line 7
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "HEADER_JOB"), "html", null, true);
+        echo "</span>
             </div>
         </div>
         <div class=\"menu-desktop-container\">
@@ -98,7 +104,7 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  86 => 18,  83 => 17,  79 => 16,  75 => 13,  72 => 12,  68 => 11,  62 => 19,  60 => 16,  56 => 14,  54 => 11,  44 => 4,  39 => 1,);
+        return array (  92 => 18,  89 => 17,  85 => 16,  81 => 13,  78 => 12,  74 => 11,  68 => 19,  66 => 16,  62 => 14,  60 => 11,  53 => 7,  49 => 6,  44 => 4,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -108,8 +114,8 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
         <div class=\"logo-section\">
             <img src=\"{{ url('theme://images/icons/logos/logo/logo.svg') }}\" alt=\"logo\" />
             <div class=\"summmary\">
-                <h3>Emmanuela Milaki, MA</h3>
-                <span>Individual & Family Therapist</span>
+                <h3>{{ \"HEADER_NAME\" | t }}</h3>
+                <span>{{ \"HEADER_JOB\" | t }}</span>
             </div>
         </div>
         <div class=\"menu-desktop-container\">

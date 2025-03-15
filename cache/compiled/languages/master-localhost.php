@@ -1,9 +1,19 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1742046546,
-    'checksum' => '22e43514d8f7005f62118acdcb602c4c',
+    'timestamp' => 1742079267,
+    'checksum' => '4611c718769b33abfd9cf13e33ee939e',
     'files' => [
+        'user/languages' => [
+            'en' => [
+                'file' => 'user/languages/en.yaml',
+                'modified' => 1742079266
+            ],
+            'gr' => [
+                'file' => 'user/languages/gr.yaml',
+                'modified' => 1742079266
+            ]
+        ],
         'system/languages' => [
             'ar' => [
                 'file' => 'system/languages/ar.yaml',
@@ -3854,7 +3864,28 @@ Path: `%2$s`
                     'ERROR3' => 'The jquery_element should be set into jqCron settings',
                     'ERROR4' => 'Unrecognized expression'
                 ]
-            ]
+            ],
+            'HEADER_NAME' => 'Emmanuela Milaki, MA',
+            'HEADER_JOB' => 'Individual & Family Therapist',
+            'ADDRESS' => 'Address',
+            'CONNECT_WITH_ME_ON' => 'Connect with me on',
+            'EMMANOUELA_MILAKI' => 'Emmanouela Milaki',
+            'CLOSED' => 'CloseD',
+            'OPEN' => 'Open',
+            'READ_MODE' => 'Read more',
+            'HERACLION' => 'Heraklion',
+            'NIKOLAIDI' => 'Nikolaidi',
+            'FOOTER_DISCLAIMER' => 'All consultations and communications are strictly confidential. This site does not store any data and does not provide medical advice or treatment recommendations.',
+            'FOOTER_ALL_RIGHTS_RESERVED' => 'All rights reserved',
+            'FOOOTER_ICONS_BY' => 'Icons by',
+            'HOME' => 'Home',
+            'SERVICES' => 'Services',
+            'BIOGRAPHY' => 'Biography',
+            'CONTACTS' => 'Contacts',
+            'NEWS' => 'News',
+            'INTENDED_FOR' => 'Intended for',
+            'APPROACH_USED' => 'Approach used',
+            'WHAT_YOU_GAIN' => 'What you gain'
         ],
         'es' => [
             'PLUGIN_LOGIN' => [
@@ -47556,6 +47587,29 @@ Slóð: `%2$s`
                     6 => 'søndag'
                 ]
             ]
+        ],
+        'gr' => [
+            'HEADER_NAME' => 'Eμμανουέλα Μηλάκη, MA',
+            'HEADER_JOB' => 'Ατομική & Οικογενειακή Θεραπεία',
+            'ADDRESS' => 'Διεύθυνση',
+            'CONNECT_WITH_ME_ON' => 'Συνδεθείτε μαζί μου στο',
+            'EMMANOUELA_MILAKI' => 'Eμμανουέλα Μηλάκη',
+            'CLOSED' => 'Κλειστό',
+            'OPEN' => 'Ανοιχτό',
+            'READ_MODE' => 'Διαβάστε περισσότερα',
+            'HERACLION' => 'Ηράκλειο',
+            'NIKOLAIDI' => 'Νικολαΐδη',
+            'FOOTER_DISCLAIMER' => 'Όλες οι συμβουλές και οι επικοινωνίες είναι αυστηρά εμπιστευτικές. Αυτός ο ιστότοπος δεν αποθηκεύει δεδομένα και δεν παρέχει ιατρικές συμβουλές ή προτάσεις θεραπείας.',
+            'FOOTER_ALL_RIGHTS_RESERVED' => 'Όλα τα δικαιώματα διατηρούνται.',
+            'FOOTER_ICONS_BY' => 'Εικονίδια από',
+            'HOME' => 'Αρχική',
+            'SERVICES' => 'Υπηρεσίες',
+            'BIOGRAPHY' => 'Βιογραφία',
+            'CONTACTS' => 'Επαφές',
+            'NEWS' => 'Νέα',
+            'INTENDED_FOR' => 'Προορίζεται για',
+            'APPROACH_USED' => 'Χρησιμοποιούμενη προσέγγιση',
+            'WHAT_YOU_GAIN' => 'Τι κερδίζετε'
         ]
     ]
 ];

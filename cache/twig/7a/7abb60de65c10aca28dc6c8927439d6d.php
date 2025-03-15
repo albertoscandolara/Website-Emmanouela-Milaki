@@ -114,12 +114,13 @@ class __TwigTemplate_930da5091c6ee35a13e6340a2555dfdf extends \Twig\Template
             // line 31
             echo "                <p class=\"link\"><a href=\"";
             echo twig_escape_filter($this->env, ($context["link"] ?? null), "html", null, true);
-            echo "\" target=\"_blank\">Read More</a></p>
+            echo "\" target=\"_blank\">";
+            echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "READ_MODE"), "html", null, true);
+            echo "</a></p>
             ";
         }
         // line 33
-        echo "            
-        </div>
+        echo "        </div>
     </div>
 </section>";
     }
@@ -136,7 +137,7 @@ class __TwigTemplate_930da5091c6ee35a13e6340a2555dfdf extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  121 => 33,  115 => 31,  113 => 30,  110 => 29,  104 => 27,  102 => 26,  99 => 25,  93 => 23,  91 => 22,  87 => 20,  81 => 18,  79 => 17,  75 => 15,  71 => 13,  62 => 11,  58 => 10,  55 => 9,  53 => 8,  50 => 7,  44 => 5,  42 => 4,  37 => 1,);
+        return array (  123 => 33,  115 => 31,  113 => 30,  110 => 29,  104 => 27,  102 => 26,  99 => 25,  93 => 23,  91 => 22,  87 => 20,  81 => 18,  79 => 17,  75 => 15,  71 => 13,  62 => 11,  58 => 10,  55 => 9,  53 => 8,  50 => 7,  44 => 5,  42 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -171,9 +172,8 @@ class __TwigTemplate_930da5091c6ee35a13e6340a2555dfdf extends \Twig\Template
             {% endif %}
 
             {% if link  %}
-                <p class=\"link\"><a href=\"{{ link }}\" target=\"_blank\">Read More</a></p>
+                <p class=\"link\"><a href=\"{{ link }}\" target=\"_blank\">{{ \"READ_MODE\"|t }}</a></p>
             {% endif %}
-            
         </div>
     </div>
 </section>", "partials/components/publication.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\components\\publication.html.twig");

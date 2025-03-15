@@ -12,7 +12,7 @@
                             <td>{{ day.open }}</td>
                             <td>{{ day.close }}</td>
                         {% else %}
-                            <td colspan="2">Closed</td>
+                            <td colspan="2">{{ "CLOSED"|t }}</td>
                         {% endif %}
                     </tr>
                 {% endfor %}

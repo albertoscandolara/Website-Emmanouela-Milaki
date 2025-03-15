@@ -94,7 +94,10 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
         if (($context["target"] ?? null)) {
             // line 27
             echo "                <div class=\"body-block target-container\">
-                    <span class=\"label\">Intended for:</span>
+                    <span class=\"label\">";
+            // line 28
+            echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "INTENDED_FOR"), "html", null, true);
+            echo ":</span>
                     <span>";
             // line 29
             echo ($context["target"] ?? null);
@@ -107,7 +110,10 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
         if (($context["method"] ?? null)) {
             // line 33
             echo "                <div class=\"body-block method-container\">
-                    <span class=\"label\">Approach used:</span>
+                    <span class=\"label\">";
+            // line 34
+            echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "APPROACH_USED"), "html", null, true);
+            echo ":</span>
                     <span>";
             // line 35
             echo ($context["method"] ?? null);
@@ -120,7 +126,10 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
         if (($context["outcomes"] ?? null)) {
             // line 39
             echo "                <div class=\"body-block outcomes-container\">
-                    <span class=\"label\">What you gain:</span>
+                    <span class=\"label\">";
+            // line 40
+            echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "WHAT_YOU_GAIN"), "html", null, true);
+            echo ":</span>
                     <span>";
             // line 41
             echo ($context["outcomes"] ?? null);
@@ -158,7 +167,7 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  144 => 49,  138 => 47,  136 => 46,  132 => 44,  126 => 41,  122 => 39,  119 => 38,  113 => 35,  109 => 33,  106 => 32,  100 => 29,  96 => 27,  93 => 26,  87 => 23,  84 => 22,  82 => 21,  78 => 19,  72 => 17,  70 => 16,  67 => 15,  61 => 12,  58 => 11,  56 => 10,  51 => 7,  45 => 4,  42 => 3,  40 => 2,  37 => 1,);
+        return array (  153 => 49,  147 => 47,  145 => 46,  141 => 44,  135 => 41,  131 => 40,  128 => 39,  125 => 38,  119 => 35,  115 => 34,  112 => 33,  109 => 32,  103 => 29,  99 => 28,  96 => 27,  93 => 26,  87 => 23,  84 => 22,  82 => 21,  78 => 19,  72 => 17,  70 => 16,  67 => 15,  61 => 12,  58 => 11,  56 => 10,  51 => 7,  45 => 4,  42 => 3,  40 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -190,19 +199,19 @@ class __TwigTemplate_bee2fa7ce3caa3eadb565523893b38eb extends \Twig\Template
             {% endif %}
             {% if target %}
                 <div class=\"body-block target-container\">
-                    <span class=\"label\">Intended for:</span>
+                    <span class=\"label\">{{ \"INTENDED_FOR\"|t }}:</span>
                     <span>{{ target|raw }}</span>
                 </div>
             {% endif %}
             {% if method %}
                 <div class=\"body-block method-container\">
-                    <span class=\"label\">Approach used:</span>
+                    <span class=\"label\">{{ \"APPROACH_USED\"|t }}:</span>
                     <span>{{ method|raw }}</span>
                 </div>
             {% endif %}
             {% if outcomes %}
                 <div class=\"body-block outcomes-container\">
-                    <span class=\"label\">What you gain:</span>
+                    <span class=\"label\">{{ \"WHAT_YOU_GAIN\"|t }}:</span>
                     <span>{{ outcomes|raw }}</span>
                 </div>
             {% endif %}

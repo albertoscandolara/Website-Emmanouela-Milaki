@@ -69,7 +69,9 @@ class __TwigTemplate_5ce5f123692e38680246fe439df6d4e5 extends \Twig\Template
                         ";
             } else {
                 // line 15
-                echo "                            <td colspan=\"2\">Closed</td>
+                echo "                            <td colspan=\"2\">";
+                echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "CLOSED"), "html", null, true);
+                echo "</td>
                         ";
             }
             // line 17
@@ -98,7 +100,7 @@ class __TwigTemplate_5ce5f123692e38680246fe439df6d4e5 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  83 => 19,  76 => 17,  72 => 15,  67 => 13,  62 => 12,  60 => 11,  56 => 10,  53 => 9,  49 => 8,  42 => 4,  37 => 1,);
+        return array (  85 => 19,  78 => 17,  72 => 15,  67 => 13,  62 => 12,  60 => 11,  56 => 10,  53 => 9,  49 => 8,  42 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -117,7 +119,7 @@ class __TwigTemplate_5ce5f123692e38680246fe439df6d4e5 extends \Twig\Template
                             <td>{{ day.open }}</td>
                             <td>{{ day.close }}</td>
                         {% else %}
-                            <td colspan=\"2\">Closed</td>
+                            <td colspan=\"2\">{{ \"CLOSED\"|t }}</td>
                         {% endif %}
                     </tr>
                 {% endfor %}

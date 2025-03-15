@@ -1,7 +1,7 @@
 ---
-title: Home
-menu: Home
-slug: home
+title: Αρχική
+menu: Αρχική
+slug: αρχική
 onpage_menu: true
 content:
   items: "@self.modular"

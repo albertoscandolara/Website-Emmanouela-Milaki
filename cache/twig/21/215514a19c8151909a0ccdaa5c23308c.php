@@ -37,7 +37,10 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
         echo "<footer>
     <section class=\"footer-content\">
         <section class=\"footer-section\">
-            <h3>Contacts</h3>
+            <h3>";
+        // line 4
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "CONTACTS"), "html", null, true);
+        echo "</h3>
             <ul id=\"container-contacts\" class=\"footer-section-container\">
                 <li id=\"email\" class=\"footer-section-contact-item\">
                     <a href=\"mailto:emmamilaki.psy@gmail.com\">emmamilaki.psy@gmail.com</a>
@@ -54,7 +57,10 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
                 </li>
                 <li id=\"social\" class=\"footer-section-contact-item\">
                     <ul class=\"social-media\">
-                        <li title=\"Connect with me on Linkedin\">
+                        <li title=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "CONNECT_WITH_ME_ON"), "html", null, true);
+        echo " LinkedIn\">
                             <a href=\"https://linkedin.com/in/milaki\" target=\"_blank\" aria-label=\"LinkedIn\">
                                 <img src=\"";
         // line 23
@@ -62,7 +68,10 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
         echo "\" alt=\"LinkedIn\" />
                             </a>
                         </li>
-                        <li title=\"Connect with me on Instagram\">
+                        <li title=\"";
+        // line 26
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "CONNECT_WITH_ME_ON"), "html", null, true);
+        echo " Instagram\">
                             <a href=\"https://instagram.com/milaki_psychologist\" target=\"_blank\" aria-label=\"Instagram\">
                                 <img src=\"";
         // line 28
@@ -70,7 +79,10 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
         echo "\" alt=\"Instagram\" />
                             </a>
                         </li>
-                        <li title=\"Connect with me on Facebook\">
+                        <li title=\"";
+        // line 31
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "CONNECT_WITH_ME_ON"), "html", null, true);
+        echo " Facebook\">
                             <a href=\"https://facebook.com/EmmaMilaki\" target=\"_blank\" aria-label=\"Facebook\">
                                 <img src=\"";
         // line 33
@@ -83,9 +95,17 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
             </ul>
         </section>
         <section class=\"footer-section\">
-            <h3>Address</h3>
+            <h3>";
+        // line 41
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "ADDRESS"), "html", null, true);
+        echo "</h3>
             <div id=\"container-map\" class=\"footer-section-container\">
-                <span>Nikolaidi 19, 71305, Heraklion</span>
+                <span>";
+        // line 43
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "NIKOLAIDI"), "html", null, true);
+        echo " 19, 71305, ";
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "HERACLION"), "html", null, true);
+        echo "</span>
                 <iframe
                     frameborder=\"0\"
                     src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.159838481589!2d25.14458!3d35.33856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149f4f36e5599c93%3A0x253f9e088cc1c8e6!2sNikolaidi%2019%2C%2071305%2C%20Heraklion%2C%20Greece!5e0!3m2!1sen!2sus!4v1673964075197!5m2!1sen!2sus\"
@@ -106,8 +126,18 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
     </section>
     <section style=\"text-align: center;\">
         <span>
-            All consultations and communications are strictly confidential. This site does not store any data and does not provide medical advice or treatment recommendations.<br>
-            © <script>document.write(new Date().getFullYear());</script> Emmanouela Milaki. All rights reserved. Icons by <a target=\"_blank\" href=\"https://icons8.com\">Icons8.</a>
+            ";
+        // line 64
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "FOOTER_DISCLAIMER"), "html", null, true);
+        echo "<br>
+            © <script>document.write(new Date().getFullYear());</script> ";
+        // line 65
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "EMMANOUELA_MILAKI"), "html", null, true);
+        echo ". ";
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "FOOTER_ALL_RIGHTS_RESERVED"), "html", null, true);
+        echo ". ";
+        echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "FOOTER_ICONS_BY"), "html", null, true);
+        echo " <a target=\"_blank\" href=\"https://icons8.com\">Icons8.</a>
         </span>
     </section>
 </footer>";
@@ -125,7 +155,7 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  77 => 33,  69 => 28,  61 => 23,  37 => 1,);
+        return array (  135 => 65,  131 => 64,  105 => 43,  100 => 41,  89 => 33,  84 => 31,  78 => 28,  73 => 26,  67 => 23,  62 => 21,  42 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -133,7 +163,7 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
         return new Source("<footer>
     <section class=\"footer-content\">
         <section class=\"footer-section\">
-            <h3>Contacts</h3>
+            <h3>{{ \"CONTACTS\"|t }}</h3>
             <ul id=\"container-contacts\" class=\"footer-section-container\">
                 <li id=\"email\" class=\"footer-section-contact-item\">
                     <a href=\"mailto:emmamilaki.psy@gmail.com\">emmamilaki.psy@gmail.com</a>
@@ -150,17 +180,17 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
                 </li>
                 <li id=\"social\" class=\"footer-section-contact-item\">
                     <ul class=\"social-media\">
-                        <li title=\"Connect with me on Linkedin\">
+                        <li title=\"{{ \"CONNECT_WITH_ME_ON\"|t }} LinkedIn\">
                             <a href=\"https://linkedin.com/in/milaki\" target=\"_blank\" aria-label=\"LinkedIn\">
                                 <img src=\"{{ url('theme://images/icons/logos/linkedin/logo.svg') }}\" alt=\"LinkedIn\" />
                             </a>
                         </li>
-                        <li title=\"Connect with me on Instagram\">
+                        <li title=\"{{ \"CONNECT_WITH_ME_ON\"|t }} Instagram\">
                             <a href=\"https://instagram.com/milaki_psychologist\" target=\"_blank\" aria-label=\"Instagram\">
                                 <img src=\"{{ url('theme://images/icons/logos/instagram/logo.svg') }}\" alt=\"Instagram\" />
                             </a>
                         </li>
-                        <li title=\"Connect with me on Facebook\">
+                        <li title=\"{{ \"CONNECT_WITH_ME_ON\"|t }} Facebook\">
                             <a href=\"https://facebook.com/EmmaMilaki\" target=\"_blank\" aria-label=\"Facebook\">
                                 <img src=\"{{ url('theme://images/icons/logos/facebook/logo.svg') }}\" alt=\"Facebook\" />
                             </a>
@@ -170,9 +200,9 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
             </ul>
         </section>
         <section class=\"footer-section\">
-            <h3>Address</h3>
+            <h3>{{ \"ADDRESS\"|t }}</h3>
             <div id=\"container-map\" class=\"footer-section-container\">
-                <span>Nikolaidi 19, 71305, Heraklion</span>
+                <span>{{ \"NIKOLAIDI\"|t }} 19, 71305, {{ \"HERACLION\"|t }}</span>
                 <iframe
                     frameborder=\"0\"
                     src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.159838481589!2d25.14458!3d35.33856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x149f4f36e5599c93%3A0x253f9e088cc1c8e6!2sNikolaidi%2019%2C%2071305%2C%20Heraklion%2C%20Greece!5e0!3m2!1sen!2sus!4v1673964075197!5m2!1sen!2sus\"
@@ -193,8 +223,8 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
     </section>
     <section style=\"text-align: center;\">
         <span>
-            All consultations and communications are strictly confidential. This site does not store any data and does not provide medical advice or treatment recommendations.<br>
-            © <script>document.write(new Date().getFullYear());</script> Emmanouela Milaki. All rights reserved. Icons by <a target=\"_blank\" href=\"https://icons8.com\">Icons8.</a>
+            {{ \"FOOTER_DISCLAIMER\"|t }}<br>
+            © <script>document.write(new Date().getFullYear());</script> {{ \"EMMANOUELA_MILAKI\"|t}}. {{ \"FOOTER_ALL_RIGHTS_RESERVED\"|t }}. {{ \"FOOTER_ICONS_BY\"|t }} <a target=\"_blank\" href=\"https://icons8.com\">Icons8.</a>
         </span>
     </section>
 </footer>", "partials/footer.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\footer.html.twig");

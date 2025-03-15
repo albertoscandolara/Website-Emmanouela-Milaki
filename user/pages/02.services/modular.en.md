@@ -9,7 +9,7 @@ content:
     by: default
     dir: asc
     custom:
-      - services
+      - _services
   routable: true
 process:
   twig: true
