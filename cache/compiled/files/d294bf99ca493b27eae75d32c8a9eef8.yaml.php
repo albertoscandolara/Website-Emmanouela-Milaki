@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/plugins/email/blueprints.yaml',
-    'modified' => 1735250275,
+    'modified' => 1736142488,
     'size' => 3899,
     'data' => [
         'name' => 'Email',
         'slug' => 'email',
         'type' => 'plugin',
-        'version' => '4.1.1',
+        'version' => '4.1.2',
         'testing' => false,
         'description' => 'Enables the emailing system for Grav',
         'icon' => 'envelope',

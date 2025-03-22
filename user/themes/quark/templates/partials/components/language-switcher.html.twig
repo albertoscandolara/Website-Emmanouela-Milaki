@@ -7,12 +7,12 @@
 {# Generate the translated URL with the correct prefix #}
 {% set translatedUrl = '/' ~ newLang ~ baseRoute %}
 
-<div class="toggle-container">
-    <a href="{{ translatedUrl }}" class="toggle-circle">
+<a href="{{ translatedUrl }}" class="toggle-container">
+    <div class="toggle-circle">
         <img class="toggle-img img-left" src="{{ theme_url }}/images/icons/flags/greece.svg" alt="Greek Flag">
         <img class="toggle-img img-right" src="{{ theme_url }}/images/icons/flags/united kingdom.svg" alt="English Flag">
-    </a>
-</div>
+    </div>
+</a>
 
 
 <script>

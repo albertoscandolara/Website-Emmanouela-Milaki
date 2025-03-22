@@ -49,11 +49,11 @@ class __TwigTemplate_74cdd2b4ed25de26b54c318fff97c41c extends \Twig\Template
         $context["translatedUrl"] = (("/" . ($context["newLang"] ?? null)) . ($context["baseRoute"] ?? null));
         // line 9
         echo "
-<div class=\"toggle-container\">
-    <a href=\"";
-        // line 11
+<a href=\"";
+        // line 10
         echo twig_escape_filter($this->env, ($context["translatedUrl"] ?? null), "html", null, true);
-        echo "\" class=\"toggle-circle\">
+        echo "\" class=\"toggle-container\">
+    <div class=\"toggle-circle\">
         <img class=\"toggle-img img-left\" src=\"";
         // line 12
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
@@ -62,8 +62,8 @@ class __TwigTemplate_74cdd2b4ed25de26b54c318fff97c41c extends \Twig\Template
         // line 13
         echo twig_escape_filter($this->env, ($context["theme_url"] ?? null), "html", null, true);
         echo "/images/icons/flags/united kingdom.svg\" alt=\"English Flag\">
-    </a>
-</div>
+    </div>
+</a>
 
 
 <script>
@@ -99,7 +99,7 @@ document.addEventListener(\"DOMContentLoaded\", function () {
 
     public function getDebugInfo()
     {
-        return array (  63 => 13,  59 => 12,  55 => 11,  51 => 9,  49 => 8,  46 => 6,  44 => 5,  41 => 3,  39 => 2,  37 => 1,);
+        return array (  63 => 13,  59 => 12,  54 => 10,  51 => 9,  49 => 8,  46 => 6,  44 => 5,  41 => 3,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -113,12 +113,12 @@ document.addEventListener(\"DOMContentLoaded\", function () {
 {# Generate the translated URL with the correct prefix #}
 {% set translatedUrl = '/' ~ newLang ~ baseRoute %}
 
-<div class=\"toggle-container\">
-    <a href=\"{{ translatedUrl }}\" class=\"toggle-circle\">
+<a href=\"{{ translatedUrl }}\" class=\"toggle-container\">
+    <div class=\"toggle-circle\">
         <img class=\"toggle-img img-left\" src=\"{{ theme_url }}/images/icons/flags/greece.svg\" alt=\"Greek Flag\">
         <img class=\"toggle-img img-right\" src=\"{{ theme_url }}/images/icons/flags/united kingdom.svg\" alt=\"English Flag\">
-    </a>
-</div>
+    </div>
+</a>
 
 
 <script>
