@@ -12,5 +12,5 @@ content:
       - _μότο
       - _βιογραφία
       - _δημοσιεύσεις
-  routable: true
+routable: true
 ---

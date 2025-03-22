@@ -27,6 +27,7 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
         $this->parent = false;
 
         $this->blocks = [
+            'language_switcher' => [$this, 'block_language_switcher'],
         ];
     }
 
@@ -53,29 +54,35 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
             </section>
         </section>
         <section class=\"body\">
+            <div class=\"language-switcher-container\">
+                ";
+        // line 20
+        $this->displayBlock('language_switcher', $context, $blocks);
+        // line 23
+        echo "            </div>
             <nav class=\"navbar\">
                 <ul class=\"nav-links\">
                     ";
-        // line 21
+        // line 26
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["pages"] ?? null), "children", [], "any", false, false, false, 21), "visible", [], "any", false, false, false, 21));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["pages"] ?? null), "children", [], "any", false, false, false, 26), "visible", [], "any", false, false, false, 26));
         foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-            // line 22
+            // line 27
             echo "                    <li class=\"";
-            if ((twig_get_attribute($this->env, $this->source, $context["page"], "active", [], "any", false, false, false, 22) || twig_get_attribute($this->env, $this->source, $context["page"], "activeChild", [], "any", false, false, false, 22))) {
+            if ((twig_get_attribute($this->env, $this->source, $context["page"], "active", [], "any", false, false, false, 27) || twig_get_attribute($this->env, $this->source, $context["page"], "activeChild", [], "any", false, false, false, 27))) {
                 echo "selected";
             }
             echo "\"
                         title=\"";
-            // line 23
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 23)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 23)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 23))), "html", null, true);
+            // line 28
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 28)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 28)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 28))), "html", null, true);
             echo "\">
                         <button>
                             <a href=\"";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 25), "html", null, true);
+            // line 30
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 30), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 25)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 25)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 25))), "html", null, true);
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 30)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 30)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 30))), "html", null, true);
             echo "</a>
                         </button>
                     </li>
@@ -84,13 +91,24 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 29
+        // line 34
         echo "                </ul>
             </nav>
         </section>
         <section class=\"footer\"></section>
     </div>
 </section>";
+    }
+
+    // line 20
+    public function block_language_switcher($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        // line 21
+        echo "                    ";
+        $this->loadTemplate("partials/components/language-switcher.html.twig", "partials/menu_mobile.html.twig", 21)->display($context);
+        // line 22
+        echo "                ";
     }
 
     public function getTemplateName()
@@ -105,7 +123,7 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  88 => 29,  76 => 25,  71 => 23,  64 => 22,  60 => 21,  39 => 2,  37 => 1,);
+        return array (  111 => 22,  108 => 21,  104 => 20,  95 => 34,  83 => 30,  78 => 28,  71 => 27,  67 => 26,  62 => 23,  60 => 20,  40 => 2,  38 => 1,);
     }
 
     public function getSourceContext()
@@ -128,6 +146,11 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
             </section>
         </section>
         <section class=\"body\">
+            <div class=\"language-switcher-container\">
+                {% block language_switcher %}
+                    {% include 'partials/components/language-switcher.html.twig' %}
+                {% endblock %}
+            </div>
             <nav class=\"navbar\">
                 <ul class=\"nav-links\">
                     {% for page in pages.children.visible %}

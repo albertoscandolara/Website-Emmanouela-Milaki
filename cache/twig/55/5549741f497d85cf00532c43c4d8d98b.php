@@ -43,7 +43,9 @@ class __TwigTemplate_b3e4a1150f406c4bcaa139134a756725 extends \Twig\Template
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 4), "phones", [], "any", false, false, false, 4));
         foreach ($context['_seq'] as $context["_key"] => $context["phone"]) {
             // line 5
-            echo "                <li title=\"Give us a call!\">
+            echo "                <li title=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "GIVE_US_A_CALL"), "html", null, true);
+            echo "!\">
                     <a href=\"tel:";
             // line 6
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["phone"], "number", [], "any", false, false, false, 6), "html", null, true);
@@ -87,7 +89,7 @@ class __TwigTemplate_b3e4a1150f406c4bcaa139134a756725 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  73 => 13,  63 => 9,  57 => 8,  53 => 7,  49 => 6,  46 => 5,  42 => 4,  37 => 1,);
+        return array (  75 => 13,  65 => 9,  59 => 8,  55 => 7,  51 => 6,  46 => 5,  42 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -96,7 +98,7 @@ class __TwigTemplate_b3e4a1150f406c4bcaa139134a756725 extends \Twig\Template
     <section class=\"phone\">
         <ul class=\"phone-numbers\">
             {% for phone in module.header.phones %}
-                <li title=\"Give us a call!\">
+                <li title=\"{{ \"GIVE_US_A_CALL\"|t }}!\">
                     <a href=\"tel:{{ phone.number }}\">
                         <img class=\"phone\" src=\"{{ url('theme://images/icons/phone.svg') }}\" alt=\"Phone Icon\">
                         <img class=\"flag\" src=\"{{ url('theme://images/icons/flags/' ~ phone.flag) }}\" alt=\"{{ phone.title }} Flag\">

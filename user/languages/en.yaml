@@ -3,11 +3,12 @@ HEADER_JOB: "Individual & Family Therapist"
 
 ADDRESS: "Address"
 CONNECT_WITH_ME_ON: "Connect with me on"
+GIVE_US_A_CALL: "Give us a call"
 
 EMMANOUELA_MILAKI: "Emmanouela Milaki"
 
 # General
-CLOSED: "CloseD"
+CLOSED: "Closed"
 OPEN: "Open"
 READ_MODE: "Read more"
 

@@ -12,5 +12,5 @@ content:
       - _motto
       - _biography
       - _publications
-  routable: true
+routable: true
 ---

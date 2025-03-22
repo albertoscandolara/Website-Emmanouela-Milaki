@@ -54,6 +54,13 @@
             flex: 1;
             display: flex;
             flex-direction: column;
+            gap: 3rem;
+            overflow-y: auto;
+
+            .language-switcher-container {
+                display: block;
+                height: 2.5rem;
+            }
 
             .navbar {
                 flex: 1;

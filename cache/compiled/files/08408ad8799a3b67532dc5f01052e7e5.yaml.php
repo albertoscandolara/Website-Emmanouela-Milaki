@@ -2,13 +2,14 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/languages/gr.yaml',
-    'modified' => 1742079266,
-    'size' => 1279,
+    'modified' => 1742332438,
+    'size' => 1320,
     'data' => [
         'HEADER_NAME' => 'Eμμανουέλα Μηλάκη, MA',
         'HEADER_JOB' => 'Ατομική & Οικογενειακή Θεραπεία',
         'ADDRESS' => 'Διεύθυνση',
         'CONNECT_WITH_ME_ON' => 'Συνδεθείτε μαζί μου στο',
+        'GIVE_US_A_CALL' => 'Καλέστε μας',
         'EMMANOUELA_MILAKI' => 'Eμμανουέλα Μηλάκη',
         'CLOSED' => 'Κλειστό',
         'OPEN' => 'Ανοιχτό',

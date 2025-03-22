@@ -1,7 +1,7 @@
 ---
 title: Νέα
 menu: Νέα
-slug: news
+slug: νέα
 onpage_menu: true
 content:
   items: "@self.modular"

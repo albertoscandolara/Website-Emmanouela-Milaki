@@ -7,15 +7,22 @@
                 <span>{{ "HEADER_JOB" | t }}</span>
             </div>
         </div>
-        <div class="menu-desktop-container">
-            {% block menu_desktop %}
-                {% include 'partials/menu_desktop.html.twig' %}
-            {% endblock %}
-        </div>
-        <div class="menu-mobile-container">
-            {% block menu_mobile %}
-                {% include 'partials/menu_mobile.html.twig' %}
-            {% endblock %}
+        <div class="right-section">
+            <div class="menu-desktop-container">
+                {% block menu_desktop %}
+                    {% include 'partials/menu_desktop.html.twig' %}
+                {% endblock %}
+            </div>
+            <div class="language-switcher-container">
+                {% block language_switcher %}
+                    {% include 'partials/components/language-switcher.html.twig' %}
+                {% endblock %}
+            </div>
+            <div class="menu-mobile-container">
+                {% block menu_mobile %}
+                    {% include 'partials/menu_mobile.html.twig' %}
+                {% endblock %}
+            </div>
         </div>
     </section>
 </header>

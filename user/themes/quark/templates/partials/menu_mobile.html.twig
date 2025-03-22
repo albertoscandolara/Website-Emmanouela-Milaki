@@ -16,6 +16,11 @@
             </section>
         </section>
         <section class="body">
+            <div class="language-switcher-container">
+                {% block language_switcher %}
+                    {% include 'partials/components/language-switcher.html.twig' %}
+                {% endblock %}
+            </div>
             <nav class="navbar">
                 <ul class="nav-links">
                     {% for page in pages.children.visible %}

@@ -1,17 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1742079267,
-    'checksum' => '4611c718769b33abfd9cf13e33ee939e',
+    'timestamp' => 1742654735,
+    'checksum' => 'b78f9a89e14503dab80ae5440a3f531b',
     'files' => [
         'user/languages' => [
             'en' => [
                 'file' => 'user/languages/en.yaml',
-                'modified' => 1742079266
+                'modified' => 1742332438
             ],
             'gr' => [
                 'file' => 'user/languages/gr.yaml',
-                'modified' => 1742079266
+                'modified' => 1742332438
             ]
         ],
         'system/languages' => [
@@ -3869,8 +3869,9 @@ Path: `%2$s`
             'HEADER_JOB' => 'Individual & Family Therapist',
             'ADDRESS' => 'Address',
             'CONNECT_WITH_ME_ON' => 'Connect with me on',
+            'GIVE_US_A_CALL' => 'Give us a call',
             'EMMANOUELA_MILAKI' => 'Emmanouela Milaki',
-            'CLOSED' => 'CloseD',
+            'CLOSED' => 'Closed',
             'OPEN' => 'Open',
             'READ_MODE' => 'Read more',
             'HERACLION' => 'Heraklion',
@@ -47593,6 +47594,7 @@ Slóð: `%2$s`
             'HEADER_JOB' => 'Ατομική & Οικογενειακή Θεραπεία',
             'ADDRESS' => 'Διεύθυνση',
             'CONNECT_WITH_ME_ON' => 'Συνδεθείτε μαζί μου στο',
+            'GIVE_US_A_CALL' => 'Καλέστε μας',
             'EMMANOUELA_MILAKI' => 'Eμμανουέλα Μηλάκη',
             'CLOSED' => 'Κλειστό',
             'OPEN' => 'Ανοιχτό',

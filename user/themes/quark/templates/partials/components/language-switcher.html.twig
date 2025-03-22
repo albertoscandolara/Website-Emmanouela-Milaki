@@ -1,0 +1,35 @@
+{% set lang = grav.language.getActive %}
+{% set newLang = lang == 'en' ? 'gr' : 'en' %}
+
+{# Get the route without the current language prefix #}
+{% set baseRoute = page.rawRoute %}
+
+{# Generate the translated URL with the correct prefix #}
+{% set translatedUrl = '/' ~ newLang ~ baseRoute %}
+
+<div class="toggle-container">
+    <a href="{{ translatedUrl }}" class="toggle-circle">
+        <img class="toggle-img img-left" src="{{ theme_url }}/images/icons/flags/greece.svg" alt="Greek Flag">
+        <img class="toggle-img img-right" src="{{ theme_url }}/images/icons/flags/united kingdom.svg" alt="English Flag">
+    </a>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleContainer = document.querySelector(".toggle-container");
+
+    const langPrefixes = ["en", "gr"];
+    const currentPath = window.location.pathname.split("/").filter(Boolean); // Remove empty entries
+
+    let currentLang = langPrefixes.includes(currentPath[0]) ? currentPath[0] : "gr"; // Default to 'gr'
+    let oppositeLang = currentLang === "en" ? "gr" : "en";
+
+    // Set active class for language toggle
+    if (currentLang === "en") {
+        toggleContainer.classList.add("active");
+    } else {
+        toggleContainer.classList.remove("active");
+    }
+});
+</script>

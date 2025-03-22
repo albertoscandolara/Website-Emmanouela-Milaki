@@ -28,6 +28,7 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
 
         $this->blocks = [
             'menu_desktop' => [$this, 'block_menu_desktop'],
+            'language_switcher' => [$this, 'block_language_switcher'],
             'menu_mobile' => [$this, 'block_menu_mobile'],
         ];
     }
@@ -54,42 +55,61 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
         echo "</span>
             </div>
         </div>
-        <div class=\"menu-desktop-container\">
-            ";
-        // line 11
+        <div class=\"right-section\">
+            <div class=\"menu-desktop-container\">
+                ";
+        // line 12
         $this->displayBlock('menu_desktop', $context, $blocks);
-        // line 14
-        echo "        </div>
-        <div class=\"menu-mobile-container\">
-            ";
-        // line 16
+        // line 15
+        echo "            </div>
+            <div class=\"language-switcher-container\">
+                ";
+        // line 17
+        $this->displayBlock('language_switcher', $context, $blocks);
+        // line 20
+        echo "            </div>
+            <div class=\"menu-mobile-container\">
+                ";
+        // line 22
         $this->displayBlock('menu_mobile', $context, $blocks);
-        // line 19
-        echo "        </div>
+        // line 25
+        echo "            </div>
+        </div>
     </section>
 </header>";
     }
 
-    // line 11
+    // line 12
     public function block_menu_desktop($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 12
-        echo "                ";
-        $this->loadTemplate("partials/menu_desktop.html.twig", "partials/header.html.twig", 12)->display($context);
         // line 13
-        echo "            ";
+        echo "                    ";
+        $this->loadTemplate("partials/menu_desktop.html.twig", "partials/header.html.twig", 13)->display($context);
+        // line 14
+        echo "                ";
     }
 
-    // line 16
+    // line 17
+    public function block_language_switcher($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        // line 18
+        echo "                    ";
+        $this->loadTemplate("partials/components/language-switcher.html.twig", "partials/header.html.twig", 18)->display($context);
+        // line 19
+        echo "                ";
+    }
+
+    // line 22
     public function block_menu_mobile($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 17
+        // line 23
+        echo "                    ";
+        $this->loadTemplate("partials/menu_mobile.html.twig", "partials/header.html.twig", 23)->display($context);
+        // line 24
         echo "                ";
-        $this->loadTemplate("partials/menu_mobile.html.twig", "partials/header.html.twig", 17)->display($context);
-        // line 18
-        echo "            ";
     }
 
     public function getTemplateName()
@@ -104,7 +124,7 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  92 => 18,  89 => 17,  85 => 16,  81 => 13,  78 => 12,  74 => 11,  68 => 19,  66 => 16,  62 => 14,  60 => 11,  53 => 7,  49 => 6,  44 => 4,  39 => 1,);
+        return array (  112 => 24,  109 => 23,  105 => 22,  101 => 19,  98 => 18,  94 => 17,  90 => 14,  87 => 13,  83 => 12,  76 => 25,  74 => 22,  70 => 20,  68 => 17,  64 => 15,  62 => 12,  54 => 7,  50 => 6,  45 => 4,  40 => 1,);
     }
 
     public function getSourceContext()
@@ -118,15 +138,22 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
                 <span>{{ \"HEADER_JOB\" | t }}</span>
             </div>
         </div>
-        <div class=\"menu-desktop-container\">
-            {% block menu_desktop %}
-                {% include 'partials/menu_desktop.html.twig' %}
-            {% endblock %}
-        </div>
-        <div class=\"menu-mobile-container\">
-            {% block menu_mobile %}
-                {% include 'partials/menu_mobile.html.twig' %}
-            {% endblock %}
+        <div class=\"right-section\">
+            <div class=\"menu-desktop-container\">
+                {% block menu_desktop %}
+                    {% include 'partials/menu_desktop.html.twig' %}
+                {% endblock %}
+            </div>
+            <div class=\"language-switcher-container\">
+                {% block language_switcher %}
+                    {% include 'partials/components/language-switcher.html.twig' %}
+                {% endblock %}
+            </div>
+            <div class=\"menu-mobile-container\">
+                {% block menu_mobile %}
+                    {% include 'partials/menu_mobile.html.twig' %}
+                {% endblock %}
+            </div>
         </div>
     </section>
 </header>", "partials/header.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\header.html.twig");
