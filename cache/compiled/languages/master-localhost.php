@@ -1,17 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1742655889,
-    'checksum' => 'c4fcf6709cc57c1a045f892a43cc38ef',
+    'timestamp' => 1742921197,
+    'checksum' => '14f3e1742f98f7f5af465f54c3f3a6f8',
     'files' => [
         'user/languages' => [
             'en' => [
                 'file' => 'user/languages/en.yaml',
-                'modified' => 1742332438
+                'modified' => 1742921195
             ],
             'gr' => [
                 'file' => 'user/languages/gr.yaml',
-                'modified' => 1742332438
+                'modified' => 1742921195
             ]
         ],
         'system/languages' => [
@@ -3876,6 +3876,16 @@ Path: `%2$s`
             'READ_MODE' => 'Read more',
             'HERACLION' => 'Heraklion',
             'NIKOLAIDI' => 'Nikolaidi',
+            'NAME' => 'Name',
+            'ENTER_YOUR_NAME' => 'Enter your name',
+            'SURNAME' => 'Surname',
+            'ENTER_YOUR_SURNAME' => 'Enter your surname',
+            'EMAIL' => 'Email',
+            'ENTER_YOUR_EMAIL_ADDRESS' => 'Enter your email address',
+            'MESSAGE' => 'Message',
+            'ENTER_YOUR_MESSAGE' => 'Enter your message',
+            'SEND' => 'Send',
+            'SUBSCRIBE' => 'Subscribe',
             'FOOTER_DISCLAIMER' => 'All consultations and communications are strictly confidential. This site does not store any data and does not provide medical advice or treatment recommendations.',
             'FOOTER_ALL_RIGHTS_RESERVED' => 'All rights reserved',
             'FOOOTER_ICONS_BY' => 'Icons by',
@@ -47601,6 +47611,16 @@ Slóð: `%2$s`
             'READ_MODE' => 'Διαβάστε περισσότερα',
             'HERACLION' => 'Ηράκλειο',
             'NIKOLAIDI' => 'Νικολαΐδη',
+            'NAME' => 'Όνομα',
+            'ENTER_YOUR_NAME' => 'Εισαγάγετε το όνομά σας',
+            'SURNAME' => 'Επώνυμο',
+            'ENTER_YOUR_SURNAME' => 'Εισαγάγετε το επώνυμό σας',
+            'EMAIL' => 'Email',
+            'ENTER_YOUR_EMAIL_ADDRESS' => 'Εισαγάγετε τη διεύθυνση email σας',
+            'MESSAGE' => 'Μήνυμα',
+            'ENTER_YOUR_MESSAGE' => 'Εισαγάγετε το μήνυμά σας',
+            'SEND' => 'Αποστολή',
+            'SUBSCRIBE' => 'Εγγραφή',
             'FOOTER_DISCLAIMER' => 'Όλες οι συμβουλές και οι επικοινωνίες είναι αυστηρά εμπιστευτικές. Αυτός ο ιστότοπος δεν αποθηκεύει δεδομένα και δεν παρέχει ιατρικές συμβουλές ή προτάσεις θεραπείας.',
             'FOOTER_ALL_RIGHTS_RESERVED' => 'Όλα τα δικαιώματα διατηρούνται.',
             'FOOTER_ICONS_BY' => 'Εικονίδια από',

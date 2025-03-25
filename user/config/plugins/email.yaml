@@ -1,0 +1,19 @@
+enabled: true
+from: alberto.scandolara92@gmail.com
+to: alberto.scandolara92@gmail.com
+mailer:
+  engine: smtp
+  smtp:
+    server: smtp.mailtrap.io
+    port: 25
+    encryption: none
+    user: 9ca0c53019ff08
+    password: 87f075d4e22728
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: false
+cc: null
+bcc: null
+reply_to: null
+body: 'Test email'

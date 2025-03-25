@@ -1,13 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1742655356,
-    'checksum' => 'bdc48fffd1afa7dc3735ac4bf4364fb9',
+    'timestamp' => 1742920287,
+    'checksum' => '674da382b97f236d537ef48996162675',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1735296911
+            ],
+            'plugins/email' => [
+                'file' => 'user/config/plugins/email.yaml',
+                'modified' => 1742752761
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -19,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1742655353
+                'modified' => 1742920282
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -241,23 +245,27 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => NULL,
-                'to' => NULL,
+                'from' => 'alberto.scandolara92@gmail.com',
+                'to' => 'alberto.scandolara92@gmail.com',
                 'mailer' => [
-                    'engine' => 'sendmail',
+                    'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'localhost',
+                        'server' => 'smtp.mailtrap.io',
                         'port' => 25,
                         'encryption' => 'none',
-                        'user' => NULL,
-                        'password' => NULL
+                        'user' => '9ca0c53019ff08',
+                        'password' => '87f075d4e22728'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail -bs'
                     ]
                 ],
                 'content_type' => 'text/html',
-                'debug' => false
+                'debug' => false,
+                'cc' => NULL,
+                'bcc' => NULL,
+                'reply_to' => NULL,
+                'body' => 'Test email'
             ],
             'error' => [
                 'enabled' => true,

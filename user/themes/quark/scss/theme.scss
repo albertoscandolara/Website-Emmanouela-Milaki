@@ -14,10 +14,13 @@
 
 // Components
 @use 'theme/components/blockquote';
-@use 'theme/components/publication';
+@use 'theme/components/form';
+@use 'theme/components/form-contact-us';
+@use 'theme/components/form-newsletter';
 @use 'theme/components/initiative';
-@use 'theme/components/service';
 @use 'theme/components/language-switcher';
+@use 'theme/components/publication';
+@use 'theme/components/service';
 
 // Header
 @use 'theme/header';

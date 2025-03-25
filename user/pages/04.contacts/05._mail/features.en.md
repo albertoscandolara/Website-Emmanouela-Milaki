@@ -1,43 +1,62 @@
 ---
-title: Suggestions
+title: Contact us
+description: Feel free to reach out! We’ll get back to you shortly.
 content:
-    items: '@self.modular'
+  items: "@self.modular"
+template: partials/components/form-contact-us
+process:
+  twig: true
+  markdown: false
 form:
-    name: suggestions-form
-    fields:
-        -
-            name: name
-            label: Name
-            placeholder: 'Enter your name'
-            type: text
-            validate:
-                required: true
-        -
-            name: email
-            label: Email
-            placeholder: 'Enter your email'
-            type: email
-            validate:
-                required: true
-        -
-            name: message
-            label: Suggestion
-            placeholder: 'Enter your suggestion'
-            type: textarea
-            validate:
-                required: true
-    buttons:
-        -
-            type: submit
-            value: Send
-    process:
-        -
-            email:
-                from: '{{ form.value.email }}'
-                to: abc@example.com
-                subject: '[Suggestions] {{ form.value.name }}'
-                body: "{% include 'forms/data.html.twig' %}"
-        -
-            message: 'Thank you for your suggestion!'
----
+  name: contact-form
+  fields:
+    - name: name
+      label: Name
+      type: text
+      placeholder: Enter your name
+      validate:
+        required: true
 
+    - name: surname
+      label: Surname
+      type: text
+      placeholder: Enter your surname
+      validate:
+        required: true
+
+    - name: email
+      label: Email
+      type: email
+      placeholder: Enter your email
+      validate:
+        required: true
+
+    - name: message
+      label: Message
+      type: textarea
+      placeholder: Enter your message
+      validate:
+        required: true
+        min: 10
+
+  buttons:
+    - type: submit
+      value: Send
+
+  process:
+    - email:
+        from: "{{ form.value.email }}"
+        to: "recipient@example.com"
+        subject: "New Message from {{ form.value.name }} {{ form.value.surname }}"
+        body: |
+          You have received a new message from the contact form:
+
+          **Name:** {{ form.value.name }}
+          **Surname:** {{ form.value.surname }}
+          **Email:** {{ form.value.email }}
+          **Message:**
+          {{ form.value.message }}
+
+    - message: "Thank you! Your message has been sent."
+    - reset: true
+---

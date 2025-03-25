@@ -18,6 +18,18 @@ NIKOLAIDI: "Nikolaidi"
 
 #Components
 
+#Email
+NAME: "Name"
+ENTER_YOUR_NAME: "Enter your name"
+SURNAME: "Surname"
+ENTER_YOUR_SURNAME: "Enter your surname"
+EMAIL: "Email"
+ENTER_YOUR_EMAIL_ADDRESS: "Enter your email address"
+MESSAGE: "Message"
+ENTER_YOUR_MESSAGE: "Enter your message"
+SEND: "Send"
+SUBSCRIBE: "Subscribe"
+
 #Footer
 FOOTER_DISCLAIMER: "All consultations and communications are strictly confidential. This site does not store any data and does not provide medical advice or treatment recommendations."
 FOOTER_ALL_RIGHTS_RESERVED: "All rights reserved"

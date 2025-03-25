@@ -17,6 +17,19 @@ HERACLION: "Ηράκλειο"
 NIKOLAIDI: "Νικολαΐδη"
 
 #Components
+
+#Email
+NAME: "Όνομα"
+ENTER_YOUR_NAME: "Εισαγάγετε το όνομά σας"
+SURNAME: "Επώνυμο"
+ENTER_YOUR_SURNAME: "Εισαγάγετε το επώνυμό σας"
+EMAIL: "Email"
+ENTER_YOUR_EMAIL_ADDRESS: "Εισαγάγετε τη διεύθυνση email σας"
+MESSAGE: "Μήνυμα"
+ENTER_YOUR_MESSAGE: "Εισαγάγετε το μήνυμά σας"
+SEND: "Αποστολή"
+SUBSCRIBE: "Εγγραφή"
+
 #Footer
 FOOTER_DISCLAIMER: "Όλες οι συμβουλές και οι επικοινωνίες είναι αυστηρά εμπιστευτικές. Αυτός ο ιστότοπος δεν αποθηκεύει δεδομένα και δεν παρέχει ιατρικές συμβουλές ή προτάσεις θεραπείας."
 FOOTER_ALL_RIGHTS_RESERVED: "Όλα τα δικαιώματα διατηρούνται."
