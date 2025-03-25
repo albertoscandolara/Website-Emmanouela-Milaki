@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/data/flex/indexes/pages.json',
-    'modified' => 1742920247,
+    'modified' => 1742924245,
     'size' => 6025,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1742920247,
+        'timestamp' => 1742924245,
         'count' => 22,
         'index' => [
             '' => [
@@ -289,25 +289,25 @@ return [
                 'key' => 'contacts/_mail',
                 'storage_key' => '04.contacts/05._mail',
                 'template' => 'features',
-                'storage_timestamp' => 1742920232,
+                'storage_timestamp' => 1742923021,
                 'markdown' => [
                     'en' => [
-                        'features' => 1742920232
+                        'features' => 1742923021
                     ]
                 ],
-                'checksum' => '75786293a448e37392306aba06a1da33'
+                'checksum' => 'bc4d46a7af5a7af7a621f10900b1081e'
             ],
             '04.contacts/06._newsletter' => [
                 'key' => 'contacts/_newsletter',
                 'storage_key' => '04.contacts/06._newsletter',
                 'template' => 'features',
-                'storage_timestamp' => 1742919787,
+                'storage_timestamp' => 1742923021,
                 'markdown' => [
                     'en' => [
-                        'features' => 1742919787
+                        'features' => 1742923021
                     ]
                 ],
-                'checksum' => '4e2e9a3bcdf8dbc11616444ad0ad025e'
+                'checksum' => '48c4eeb6e77b99ffa2942dd6e2df9731'
             ],
             '05.news' => [
                 'key' => 'news',

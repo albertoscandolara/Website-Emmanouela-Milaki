@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1742920287,
-    'checksum' => '674da382b97f236d537ef48996162675',
+    'timestamp' => 1742924390,
+    'checksum' => '115de01f3a9f009df4336c28f9fb2853',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1742752761
+                'modified' => 1742924390
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -250,11 +250,11 @@ return [
                 'mailer' => [
                     'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'smtp.mailtrap.io',
-                        'port' => 25,
+                        'server' => 'smtp.gmail.com',
+                        'port' => 587,
                         'encryption' => 'none',
-                        'user' => '9ca0c53019ff08',
-                        'password' => '87f075d4e22728'
+                        'user' => 'alberto.scandolara92@gmail.com',
+                        'password' => 'nmyydtjewaprggiu'
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail -bs'
@@ -265,7 +265,7 @@ return [
                 'cc' => NULL,
                 'bcc' => NULL,
                 'reply_to' => NULL,
-                'body' => 'Test email'
+                'body' => NULL
             ],
             'error' => [
                 'enabled' => true,

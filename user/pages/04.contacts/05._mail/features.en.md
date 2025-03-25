@@ -1,5 +1,6 @@
 ---
 title: Contact us
+cache_enable: false
 description: Feel free to reach out! We’ll get back to you shortly.
 content:
   items: "@self.modular"
@@ -8,6 +9,7 @@ process:
   twig: true
   markdown: false
 form:
+  action: /contacts
   name: contact-form
   fields:
     - name: name
@@ -45,18 +47,19 @@ form:
 
   process:
     - email:
-        from: "{{ form.value.email }}"
-        to: "recipient@example.com"
-        subject: "New Message from {{ form.value.name }} {{ form.value.surname }}"
+        from: "{{ config.plugins.email.from }}"
+        to: "{{ config.plugins.email.to }}"
+        subject: "New Message from {{ form.value.name|e }} {{ form.value.surname|e }}"
         body: |
-          You have received a new message from the contact form:
+          Hi Emmanouela,
+          You have received a new message.
 
-          **Name:** {{ form.value.name }}
-          **Surname:** {{ form.value.surname }}
-          **Email:** {{ form.value.email }}
+          **Name:** {{ form.value.name|e }}
+          **Surname:** {{ form.value.surname|e }}
+          **Email:** {{ form.value.email|e }}
           **Message:**
           {{ form.value.message }}
 
-    - message: "Thank you! Your message has been sent."
+    - message: "Thank you for getting in touch!"
     - reset: true
 ---

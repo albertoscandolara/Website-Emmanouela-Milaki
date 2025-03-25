@@ -1,5 +1,6 @@
 ---
 title: Newsletter
+cache_enable: false
 content:
   items: "@self.modular"
 template: partials/components/form-newsletter
@@ -8,6 +9,7 @@ process:
   markdown: false
 description: Subscribe for updates on psychology topics and events!
 form:
+  action: /contacts
   name: newsletter-form
   fields:
     - name: email
@@ -23,12 +25,14 @@ form:
 
   process:
     - email:
-        from: "{{ form.value.email }}"
-        to: "recipient@example.com"
-        subject: "Newsletter subscription request from {{ form.value.email }}"
+        from: "{{ config.plugins.email.from }}"
+        to: "{{ config.plugins.email.to }}"
+        subject: "Newsletter subscription request from {{ form.value.email|e }}"
         body: |
-          Hi Emmanouela, there is a new subscription request for your newsletter.
-          Email: {{ form.value.email }}
-    - message: "Thank you for subscribing to our newsletter!"
+          Hi Emmanouela,
+          There is a new subscription request for your newsletter.
+
+          **Email:** {{ form.value.email|e }}
+    - message: "Thank you for subscribing to my newsletter!"
     - reset: true
 ---

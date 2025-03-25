@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/config/plugins/email.yaml',
-    'modified' => 1742752761,
-    'size' => 370,
+    'modified' => 1742924390,
+    'size' => 379,
     'data' => [
         'enabled' => true,
         'from' => 'alberto.scandolara92@gmail.com',
@@ -11,11 +11,11 @@ return [
         'mailer' => [
             'engine' => 'smtp',
             'smtp' => [
-                'server' => 'smtp.mailtrap.io',
-                'port' => 25,
+                'server' => 'smtp.gmail.com',
+                'port' => 587,
                 'encryption' => 'none',
-                'user' => '9ca0c53019ff08',
-                'password' => '87f075d4e22728'
+                'user' => 'alberto.scandolara92@gmail.com',
+                'password' => 'nmyydtjewaprggiu'
             ],
             'sendmail' => [
                 'bin' => '/usr/sbin/sendmail -bs'
@@ -26,6 +26,6 @@ return [
         'cc' => NULL,
         'bcc' => NULL,
         'reply_to' => NULL,
-        'body' => 'Test email'
+        'body' => NULL
     ]
 ];
