@@ -2,20 +2,18 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/config/plugins/email.yaml',
-    'modified' => 1742924390,
-    'size' => 379,
+    'modified' => 1742925083,
+    'size' => 300,
     'data' => [
         'enabled' => true,
-        'from' => 'alberto.scandolara92@gmail.com',
+        'from' => 'alberto@alessiocurzel.dev',
         'to' => 'alberto.scandolara92@gmail.com',
         'mailer' => [
             'engine' => 'smtp',
             'smtp' => [
-                'server' => 'smtp.gmail.com',
-                'port' => 587,
-                'encryption' => 'none',
-                'user' => 'alberto.scandolara92@gmail.com',
-                'password' => 'nmyydtjewaprggiu'
+                'server' => '192.168.30.11',
+                'port' => 25,
+                'encryption' => 'none'
             ],
             'sendmail' => [
                 'bin' => '/usr/sbin/sendmail -bs'

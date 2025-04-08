@@ -1,6 +1,6 @@
 ---
 title: Νέα
-menu: Νέα
+menu: Νεα
 slug: νέα
 onpage_menu: true
 content:

@@ -6,7 +6,7 @@ process:
   twig: true
   markdown: false
 item_image: pics/emmanouela/emmanouela-01.jpg
-item_paragraph: "<strong>Καταχωρημένη Ψυχολόγος & Παιδοψυχολόγος\nΣυστημική Ψυχοθεραπεύτρια\n\n\nΘεραπεία Ενηλίκων, Παιδιών, Εφήβων\nΖευγάρια & Οικογένειες\nΑξιολογήσεις Παιδιών και Εφήβων</strong>"
+item_paragraph: "<strong>Εγγεγραμμένη Ψυχολόγος & Παιδοψυχολόγος\nΣυστημική Ψυχοθεραπεύτρια\n\n\nΘεραπεία Ενηλίκων, Παιδιών, Εφήβων\nΖεύγους και Οικογένειας\nΑξιολογήσεις Παιδιών και Εφήβων</strong>"
 item_title: Εμμανουέλα Μιλάκη - BSc/MA
 blockquote_author:
 blockquote_image:

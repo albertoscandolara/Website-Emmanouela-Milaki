@@ -57,7 +57,7 @@ class __TwigTemplate_664dbca66b532396c6b0c7ba5babbfc8 extends \Twig\Template
             echo "                <li class=\"paragraph\">
                     <p>";
             // line 10
-            echo twig_escape_filter($this->env, $context["paragraph"], "html", null, true);
+            echo $context["paragraph"];
             echo "</p>
                 </li>
                 ";
@@ -99,7 +99,7 @@ class __TwigTemplate_664dbca66b532396c6b0c7ba5babbfc8 extends \Twig\Template
             <ul class=\"paragraphs\">
                 {% for paragraph in module.header.paragraphs %}
                 <li class=\"paragraph\">
-                    <p>{{ paragraph }}</p>
+                    <p>{{ paragraph|raw }}</p>
                 </li>
                 {% endfor %}
             </ul>

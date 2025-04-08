@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1742924390,
-    'checksum' => '115de01f3a9f009df4336c28f9fb2853',
+    'timestamp' => 1743256925,
+    'checksum' => '6c08caf5f9452bb5ab40d2404aae2483',
     'files' => [
         'user/config' => [
             'media' => [
@@ -11,7 +11,7 @@ return [
             ],
             'plugins/email' => [
                 'file' => 'user/config/plugins/email.yaml',
-                'modified' => 1742924390
+                'modified' => 1742925083
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -245,16 +245,16 @@ return [
             ],
             'email' => [
                 'enabled' => true,
-                'from' => 'alberto.scandolara92@gmail.com',
+                'from' => 'alberto@alessiocurzel.dev',
                 'to' => 'alberto.scandolara92@gmail.com',
                 'mailer' => [
                     'engine' => 'smtp',
                     'smtp' => [
-                        'server' => 'smtp.gmail.com',
-                        'port' => 587,
+                        'server' => '192.168.30.11',
+                        'port' => 25,
                         'encryption' => 'none',
-                        'user' => 'alberto.scandolara92@gmail.com',
-                        'password' => 'nmyydtjewaprggiu'
+                        'user' => NULL,
+                        'password' => NULL
                     ],
                     'sendmail' => [
                         'bin' => '/usr/sbin/sendmail -bs'

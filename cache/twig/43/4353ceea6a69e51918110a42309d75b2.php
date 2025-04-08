@@ -27,7 +27,6 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
         $this->parent = false;
 
         $this->blocks = [
-            'language_switcher' => [$this, 'block_language_switcher'],
         ];
     }
 
@@ -54,13 +53,9 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
             </section>
         </section>
         <section class=\"body\">
-            <div class=\"language-switcher-container\">
-                ";
-        // line 20
-        $this->displayBlock('language_switcher', $context, $blocks);
-        // line 23
-        echo "            </div>
-            <nav class=\"navbar\">
+            ";
+        // line 24
+        echo "            <nav class=\"navbar\">
                 <ul class=\"nav-links\">
                     ";
         // line 26
@@ -100,17 +95,6 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
 </section>";
     }
 
-    // line 20
-    public function block_language_switcher($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        // line 21
-        echo "                    ";
-        $this->loadTemplate("partials/components/language-switcher.html.twig", "partials/menu_mobile.html.twig", 21)->display($context);
-        // line 22
-        echo "                ";
-    }
-
     public function getTemplateName()
     {
         return "partials/menu_mobile.html.twig";
@@ -123,7 +107,7 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  111 => 22,  108 => 21,  104 => 20,  95 => 34,  83 => 30,  78 => 28,  71 => 27,  67 => 26,  62 => 23,  60 => 20,  40 => 2,  38 => 1,);
+        return array (  90 => 34,  78 => 30,  73 => 28,  66 => 27,  62 => 26,  58 => 24,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -146,11 +130,11 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
             </section>
         </section>
         <section class=\"body\">
-            <div class=\"language-switcher-container\">
+            {# <div class=\"language-switcher-container\">
                 {% block language_switcher %}
                     {% include 'partials/components/language-switcher.html.twig' %}
                 {% endblock %}
-            </div>
+            </div> #}
             <nav class=\"navbar\">
                 <ul class=\"nav-links\">
                     {% for page in pages.children.visible %}

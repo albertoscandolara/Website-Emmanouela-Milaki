@@ -1,7 +1,7 @@
 ---
-title: Βιογραφία
-menu: Βιογραφία
-slug: βιογραφία
+title: Βιογραφικό
+menu: Βιογραφικο
+slug: βιογραφικό
 onpage_menu: true
 content:
   items: "@self.modular"
@@ -9,8 +9,8 @@ content:
     by: default
     dir: asc
     custom:
-      - _μότο
-      - _βιογραφία
-      - _δημοσιεύσεις
+      - _motto
+      - _biography
+      - _publications
 routable: true
 ---

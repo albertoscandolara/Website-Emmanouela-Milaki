@@ -28,7 +28,6 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
 
         $this->blocks = [
             'menu_desktop' => [$this, 'block_menu_desktop'],
-            'language_switcher' => [$this, 'block_language_switcher'],
             'menu_mobile' => [$this, 'block_menu_mobile'],
         ];
     }
@@ -62,13 +61,9 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
         $this->displayBlock('menu_desktop', $context, $blocks);
         // line 15
         echo "            </div>
-            <div class=\"language-switcher-container\">
-                ";
-        // line 17
-        $this->displayBlock('language_switcher', $context, $blocks);
-        // line 20
-        echo "            </div>
-            <div class=\"menu-mobile-container\">
+            ";
+        // line 21
+        echo "            <div class=\"menu-mobile-container\">
                 ";
         // line 22
         $this->displayBlock('menu_mobile', $context, $blocks);
@@ -87,17 +82,6 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
         echo "                    ";
         $this->loadTemplate("partials/menu_desktop.html.twig", "partials/header.html.twig", 13)->display($context);
         // line 14
-        echo "                ";
-    }
-
-    // line 17
-    public function block_language_switcher($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        // line 18
-        echo "                    ";
-        $this->loadTemplate("partials/components/language-switcher.html.twig", "partials/header.html.twig", 18)->display($context);
-        // line 19
         echo "                ";
     }
 
@@ -124,7 +108,7 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  112 => 24,  109 => 23,  105 => 22,  101 => 19,  98 => 18,  94 => 17,  90 => 14,  87 => 13,  83 => 12,  76 => 25,  74 => 22,  70 => 20,  68 => 17,  64 => 15,  62 => 12,  54 => 7,  50 => 6,  45 => 4,  40 => 1,);
+        return array (  96 => 24,  93 => 23,  89 => 22,  85 => 14,  82 => 13,  78 => 12,  71 => 25,  69 => 22,  66 => 21,  63 => 15,  61 => 12,  53 => 7,  49 => 6,  44 => 4,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -144,11 +128,11 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
                     {% include 'partials/menu_desktop.html.twig' %}
                 {% endblock %}
             </div>
-            <div class=\"language-switcher-container\">
+            {# <div class=\"language-switcher-container\">
                 {% block language_switcher %}
                     {% include 'partials/components/language-switcher.html.twig' %}
                 {% endblock %}
-            </div>
+            </div> #}
             <div class=\"menu-mobile-container\">
                 {% block menu_mobile %}
                     {% include 'partials/menu_mobile.html.twig' %}

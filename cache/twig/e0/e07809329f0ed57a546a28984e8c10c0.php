@@ -83,19 +83,6 @@ class __TwigTemplate_f830b66595f611e419cfb6b4ad4c48e8 extends \Twig\Template
             </div>
         </div>
         ";
-        // line 26
-        if (($context["image"] ?? null)) {
-            // line 27
-            echo "            <div class=\"author-pic-container\">
-                <img src=\"";
-            // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, ($context["image"] ?? null), "url", [], "any", false, false, false, 28), "html", null, true);
-            echo "\" alt=\"";
-            echo twig_escape_filter($this->env, ($context["author"] ?? null));
-            echo "\">
-            </div>
-        ";
-        }
         // line 31
         echo "    </div>
 </section>";
@@ -113,7 +100,7 @@ class __TwigTemplate_f830b66595f611e419cfb6b4ad4c48e8 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  100 => 31,  92 => 28,  89 => 27,  87 => 26,  82 => 23,  76 => 21,  73 => 20,  67 => 18,  65 => 17,  61 => 15,  55 => 12,  50 => 11,  48 => 10,  37 => 1,);
+        return array (  87 => 31,  82 => 23,  76 => 21,  73 => 20,  67 => 18,  65 => 17,  61 => 15,  55 => 12,  50 => 11,  48 => 10,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -143,11 +130,11 @@ class __TwigTemplate_f830b66595f611e419cfb6b4ad4c48e8 extends \Twig\Template
                 </div>
             </div>
         </div>
-        {% if image %}
+        {# {% if image %}
             <div class=\"author-pic-container\">
                 <img src=\"{{ image.url }}\" alt=\"{{ author|e }}\">
             </div>
-        {% endif %}
+        {% endif %} #}
     </div>
 </section>", "partials/components/blockquote.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\components\\blockquote.html.twig");
     }

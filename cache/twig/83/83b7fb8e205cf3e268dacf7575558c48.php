@@ -62,40 +62,9 @@ class __TwigTemplate_eaa8c9783fa54afd0a76cd6d57ec41a8 extends \Twig\Template
         }
         // line 13
         echo "            </section>
-            <section class=\"right\">
-                ";
-        // line 15
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 15), "item_image", [], "any", false, false, false, 15)) {
-            // line 16
-            echo "                    ";
-            $context["localImage"] = (($__internal_compile_0 = twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "media", [], "any", false, false, false, 16)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0[twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 16), "item_image", [], "any", false, false, false, 16)] ?? null) : null);
-            // line 17
-            echo "                    ";
-            if (($context["localImage"] ?? null)) {
-                // line 18
-                echo "                        ";
-                $context["imageUrl"] = twig_get_attribute($this->env, $this->source, ($context["localImage"] ?? null), "url", [], "any", false, false, false, 18);
-                // line 19
-                echo "                    ";
-            } else {
-                // line 20
-                echo "                        ";
-                $context["imageUrl"] = ((($context["theme_url"] ?? null) . "/images/") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 20), "item_image", [], "any", false, false, false, 20));
-                // line 21
-                echo "                    ";
-            }
-            // line 22
-            echo "                        <img class=\"image\" src=\"";
-            echo twig_escape_filter($this->env, ($context["imageUrl"] ?? null), "html", null, true);
-            echo "\" alt=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 22), "item_title", [], "any", false, false, false, 22), "html", null, true);
-            echo "\">
-                        </img>
-                ";
-        }
-        // line 25
-        echo "            </section>
-        </section>
+            ";
+        // line 26
+        echo "        </section>
     </div>
 </article>
 ";
@@ -113,7 +82,7 @@ class __TwigTemplate_eaa8c9783fa54afd0a76cd6d57ec41a8 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  97 => 25,  88 => 22,  85 => 21,  82 => 20,  79 => 19,  76 => 18,  73 => 17,  70 => 16,  68 => 15,  64 => 13,  58 => 10,  55 => 9,  53 => 8,  49 => 6,  43 => 4,  41 => 3,  37 => 1,);
+        return array (  67 => 26,  64 => 13,  58 => 10,  55 => 9,  53 => 8,  49 => 6,  43 => 4,  41 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -131,7 +100,7 @@ class __TwigTemplate_eaa8c9783fa54afd0a76cd6d57ec41a8 extends \Twig\Template
                     </div>
                 {% endif %}
             </section>
-            <section class=\"right\">
+            {# <section class=\"right\">
                 {% if module.header.item_image %}
                     {% set localImage = module.media[module.header.item_image] %}
                     {% if localImage %}
@@ -142,7 +111,7 @@ class __TwigTemplate_eaa8c9783fa54afd0a76cd6d57ec41a8 extends \Twig\Template
                         <img class=\"image\" src=\"{{ imageUrl }}\" alt=\"{{ module.header.item_title }}\">
                         </img>
                 {% endif %}
-            </section>
+            </section> #}
         </section>
     </div>
 </article>

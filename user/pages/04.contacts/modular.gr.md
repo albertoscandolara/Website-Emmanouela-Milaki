@@ -1,6 +1,6 @@
 ---
 title: Επικοινωνία
-menu: Επικοινωνία
+menu: Επικοινωνια
 slug: επικοινωνία
 onpage_menu: true
 content:
@@ -9,11 +9,11 @@ content:
     by: default
     dir: asc
     custom:
-      - _χάρτης
-      - _ώρες-λειτουργίας
-      - _τηλέφωνο
-      - _κοινωνικά-δίκτυα
-      - _email
+      - _map
+      - _opening-hours
+      - _phone
+      - _social
+      - _mail
       - _newsletter
   routable: true
 process:

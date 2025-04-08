@@ -15,7 +15,7 @@ publications:
     description: >
       This research investigates how speaking more than one language (bilingualism) 
       affects language comprehension. It also examines the cognitive factors that 
-      underpin irony interpretation. Furthermore, implications for educational 
+      underpin irony interpretation. Moreover, implications for educational 
       practices in bilingual classroom settings are discussed.
     link: "https://www.researchgate.net/publication/354163746_Irony_Comprehension_in_Bidialectal_Speakers"
 

@@ -67,6 +67,36 @@ class __TwigTemplate_b6f20e113a8a59598a3fd88e38db7b38 extends \Twig\Template
             ";
         }
         // line 18
+        echo "            ";
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 18), "item_image", [], "any", false, false, false, 18)) {
+            // line 19
+            echo "                ";
+            $context["localImage"] = (($__internal_compile_1 = twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "media", [], "any", false, false, false, 19)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1[twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 19), "item_image", [], "any", false, false, false, 19)] ?? null) : null);
+            // line 20
+            echo "                ";
+            if (($context["localImage"] ?? null)) {
+                // line 21
+                echo "                    ";
+                $context["imageUrl"] = twig_get_attribute($this->env, $this->source, ($context["localImage"] ?? null), "url", [], "any", false, false, false, 21);
+                // line 22
+                echo "                ";
+            } else {
+                // line 23
+                echo "                    ";
+                $context["imageUrl"] = ((($context["theme_url"] ?? null) . "/images/") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 23), "item_image", [], "any", false, false, false, 23));
+                // line 24
+                echo "                ";
+            }
+            // line 25
+            echo "                    <img class=\"image\" src=\"";
+            echo twig_escape_filter($this->env, ($context["imageUrl"] ?? null), "html", null, true);
+            echo "\" alt=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 25), "item_title", [], "any", false, false, false, 25), "html", null, true);
+            echo "\">
+                    </img>
+            ";
+        }
+        // line 28
         echo "        </section>
     </div>
 </article>
@@ -85,7 +115,7 @@ class __TwigTemplate_b6f20e113a8a59598a3fd88e38db7b38 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  70 => 18,  66 => 16,  64 => 14,  63 => 13,  62 => 12,  61 => 11,  59 => 10,  57 => 9,  54 => 8,  52 => 7,  49 => 6,  43 => 4,  41 => 3,  37 => 1,);
+        return array (  100 => 28,  91 => 25,  88 => 24,  85 => 23,  82 => 22,  79 => 21,  76 => 20,  73 => 19,  70 => 18,  66 => 16,  64 => 14,  63 => 13,  62 => 12,  61 => 11,  59 => 10,  57 => 9,  54 => 8,  52 => 7,  49 => 6,  43 => 4,  41 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -106,6 +136,16 @@ class __TwigTemplate_b6f20e113a8a59598a3fd88e38db7b38 extends \Twig\Template
                         source: module.header.blockquote_source,
                     } %}
                 </div>
+            {% endif %}
+            {% if module.header.item_image %}
+                {% set localImage = module.media[module.header.item_image] %}
+                {% if localImage %}
+                    {% set imageUrl = localImage.url %}
+                {% else %}
+                    {% set imageUrl = theme_url ~ '/images/' ~ module.header.item_image %}
+                {% endif %}
+                    <img class=\"image\" src=\"{{ imageUrl }}\" alt=\"{{ module.header.item_title }}\">
+                    </img>
             {% endif %}
         </section>
     </div>

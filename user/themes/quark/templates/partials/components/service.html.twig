@@ -13,32 +13,11 @@
                     </div>
                 {% endif %}
             </div>
-            {% if short_description %}
-                <div class="short-description">{{ short_description|raw }}</div>
-            {% endif %}
         </div>
         <div class="body">
             {% if image %}
                 <div class="image-container">
                     <img src="{{ image }}" class="image"></img>
-                </div>
-            {% endif %}
-            {% if target %}
-                <div class="body-block target-container">
-                    <span class="label">{{ "INTENDED_FOR"|t }}:</span>
-                    <span>{{ target|raw }}</span>
-                </div>
-            {% endif %}
-            {% if method %}
-                <div class="body-block method-container">
-                    <span class="label">{{ "APPROACH_USED"|t }}:</span>
-                    <span>{{ method|raw }}</span>
-                </div>
-            {% endif %}
-            {% if outcomes %}
-                <div class="body-block outcomes-container">
-                    <span class="label">{{ "WHAT_YOU_GAIN"|t }}:</span>
-                    <span>{{ outcomes|raw }}</span>
                 </div>
             {% endif %}
         </div>

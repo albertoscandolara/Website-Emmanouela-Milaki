@@ -6,66 +6,65 @@ process:
   markdown: false
 template: modular/biography/publications
 publications:
-  - title: "Η κατανόηση της ειρωνείας σε δίγλωσσους ομιλητές"
-    authors: ["Αντωνίου, Κ.", "Μηλάκη, Ε."]
+  - title: "Irony comprehension in bi-dialectal speakers"
+    authors: ["Antoniou, K.", "Milaki, E."]
     date: "2021"
     journal: "The Modern Language Journal"
     volume: "105(3)"
     pages: "697-719"
     description: >
-      Η παρούσα έρευνα εξετάζει πώς η ομιλία περισσοτέρων από μία γλώσσες (δίγλωσση) 
-      επηρεάζει την κατανόηση της γλώσσας. Εξετάζει επίσης τους γνωστικούς παράγοντες 
-      που θεμελιώνουν την ερμηνεία της ειρωνείας. Επιπλέον, συζητούνται οι επιπτώσεις 
-      για τις εκπαιδευτικές πρακτικές σε δίγλωσσες σχολικές τάξεις.
+      This research investigates how speaking more than one language (bilingualism) 
+      affects language comprehension. It also examines the cognitive factors that 
+      underpin irony interpretation. Moreover, implications for educational 
+      practices in bilingual classroom settings are discussed.
     link: "https://www.researchgate.net/publication/354163746_Irony_Comprehension_in_Bidialectal_Speakers"
 
-  - title: "Ρύθμιση συναισθημάτων και αντίδραση στον φόβο των παιδιών που εμπλέκονται σε εκφοβισμό και θυματοποίηση"
+  - title: "Emotion regulation and fear reactivity of children involved in bullying and victimisation"
     authors:
       [
-        "Μηλάκη, Ε.",
-        "Λαζάρου, Χ.",
-        "Λεονίδου, Χ.",
-        "Κωνσταντίνου, Ε.",
-        "Φαντή, Κ.",
-        "Παναγιώτου, Γ.",
+        "Milaki, E.",
+        "Lazarou, C.",
+        "Leonidou, C.",
+        "Constantinou, E.",
+        "Fanti, K.",
+        "Panayiotou, G.",
       ]
     date: "2021-07"
-    conference: "42ο Ετήσιο Συνέδριο της Διεθνούς Ένωσης Σχολικής Ψυχολογίας (ISPA)"
+    conference: "42nd Annual Conference of the International School Psychology Association (ISPA)"
     description: >
-      Η παρούσα έρευνα εξετάζει το ρόλο της ρύθμισης συναισθημάτων ως έναν πιθανό 
-      υποκείμενο μηχανισμό που επηρεάζει τον τρόπο με τον οποίο τα παιδιά που εμπλέκονται 
-      σε εκφοβισμό και θυματοποίηση αντιδρούν διαφορετικά σε φοβικές καταστάσεις. 
-      Συζητούνται επίσης οι επιπτώσεις στις σχολικές προγράμματα πρόληψης και παρέμβασης.
+      This research examines the role of emotion regulation as a possible 
+      underlying mechanism affecting the way children involved in bullying 
+      and victimization could differentially react in fearful situations. 
+      Implications on school-based prevention and intervention programs are also discussed.
     link: ""
 
-  - title: "Ανασφάλεια στη συζυγική σχέση και δυσκολίες προσαρμογής των παιδιών: Ο μεσολαβητικός ρόλος της συν-γονεϊκότητας"
-    authors: ["Μηλάκη, Ε.", "Γιοβαζολιάς, Τ."]
+  - title: "Insecurity in the marital attachment and child adjustment difficulties: The mediating role of co-parenting"
+    authors: ["Milaki, E.", "Giovazolias, T."]
     date: "2021-07"
-    conference: "42ο Ετήσιο Συνέδριο της Διεθνούς Ένωσης Σχολικής Ψυχολογίας (ISPA)"
+    conference: "42nd Annual Conference of the International School Psychology Association (ISPA)"
     description: >
-      Η παρούσα έρευνα εξετάζει την επίδραση που μπορεί να έχει η ανασφάλεια στη συζυγική 
-      σχέση των γονέων στη συν-γονεϊκότητα (την ικανότητα των γονέων να συνεργάζονται 
-      για τη φροντίδα και ανατροφή των παιδιών για τα οποία έχουν κοινή ευθύνη). 
-      Εξετάζει επίσης πώς αυτό μπορεί να επηρεάσει την προσαρμογή των παιδιών. 
-      Τέλος, συζητούνται η σημασία της θεραπείας ζευγαριών με βάση τη σύνδεση, καθώς και 
-      οι πρακτικές παρέμβασης που στοχεύουν στην ανάπτυξη δεξιοτήτων συν-γονεϊκότητας.
+      This research investigates the impact that insecurity in parents' marital 
+      attachment can have on co-parenting (the parents' ability to work together 
+      on the care and upbringing of children for whom they share responsibility). 
+      It also examines, how in turn, this can affect children's adjustment. 
+      Finally, the importance of attachment-based couples therapy, as well as 
+      intervention practices aiming at developing co-parenting skills are discussed.
     link: ""
 
-  - title: "Ρύθμιση συναισθημάτων και αντίδραση συναισθημάτων των παιδιών που εμπλέκονται σε εκφοβισμό και θυματοποίηση"
+  - title: "Emotion regulation and emotion reactivity of children involved in bullying and victimization"
     authors:
       [
-        "Μηλάκη, Ε.",
-        "Λαζάρου, Χ.",
-        "Λεονίδου, Χ.",
-        "Κωνσταντίνου, Ε.",
-        "Φαντή, Κ.",
-        "Παναγιώτου, Γ.",
+        "Milaki, E.",
+        "Lazarou, C.",
+        "Leonidou, C.",
+        "Constantinou, E.",
+        "Fanti, K.",
+        "Panayiotou, G.",
       ]
     date: "2020-10"
-    conference: "Ετήσια Συνάντηση της Εταιρείας Ψυχοφυσιολογικής Έρευνας (SPR)"
+    conference: "Society for Psychophysiological Research (SPR) Annual Meeting"
     description: >
-      Η παρούσα έρευνα βασίζεται στην προσέγγιση των Κριτηρίων Ερευνών (RDoC) και 
-      διερευνά τους ψυχοφυσιολογικούς μηχανισμούς που σχετίζονται με τον εκφοβισμό και 
-      τη θυματοποίηση.
+      This research draws upon the Research Domain Criteria (RDoC) approach and 
+      investigates the psychophysiological mechanisms associated with bullying and victimisation.
     link: ""
 ---

@@ -15,6 +15,16 @@
                     } %}
                 </div>
             {% endif %}
+            {% if module.header.item_image %}
+                {% set localImage = module.media[module.header.item_image] %}
+                {% if localImage %}
+                    {% set imageUrl = localImage.url %}
+                {% else %}
+                    {% set imageUrl = theme_url ~ '/images/' ~ module.header.item_image %}
+                {% endif %}
+                    <img class="image" src="{{ imageUrl }}" alt="{{ module.header.item_title }}">
+                    </img>
+            {% endif %}
         </section>
     </div>
 </article>
