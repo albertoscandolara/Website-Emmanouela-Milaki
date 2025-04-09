@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/data/flex/indexes/pages.json',
-    'modified' => 1743482728,
+    'modified' => 1744215702,
     'size' => 6025,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1743482728,
+        'timestamp' => 1744215702,
         'count' => 22,
         'index' => [
             '' => [
@@ -126,16 +126,16 @@ return [
                 'key' => 'services/_services',
                 'storage_key' => '02.services/01._services',
                 'template' => 'features',
-                'storage_timestamp' => 1742078531,
+                'storage_timestamp' => 1743489780,
                 'markdown' => [
                     'en' => [
-                        'features' => 1741963143
+                        'features' => 1743489780
                     ],
                     'gr' => [
-                        'features' => 1742078531
+                        'features' => 1743489780
                     ]
                 ],
-                'checksum' => 'ab4f272f11a349ca8f68067b4ff759b5'
+                'checksum' => 'fbef992ebe1a685c9c2efa8d807db62d'
             ],
             '03.biography' => [
                 'key' => 'biography',
@@ -161,46 +161,46 @@ return [
                 'key' => 'biography/_motto',
                 'storage_key' => '03.biography/01._motto',
                 'template' => 'default',
-                'storage_timestamp' => 1743367467,
+                'storage_timestamp' => 1744154316,
                 'markdown' => [
                     'en' => [
-                        'default' => 1740507890
+                        'default' => 1744154316
                     ],
                     'gr' => [
-                        'default' => 1743367467
+                        'default' => 1744154316
                     ]
                 ],
-                'checksum' => '29e1e44649ab89a111350c313964566d'
+                'checksum' => 'd56ad0c68b3f491ded06cd5a4457d115'
             ],
             '03.biography/02._biography' => [
                 'key' => 'biography/_biography',
                 'storage_key' => '03.biography/02._biography',
                 'template' => 'default',
-                'storage_timestamp' => 1742078669,
+                'storage_timestamp' => 1744151445,
                 'markdown' => [
                     'en' => [
-                        'default' => 1740509484
+                        'default' => 1744151445
                     ],
                     'gr' => [
-                        'default' => 1742078669
+                        'default' => 1744151315
                     ]
                 ],
-                'checksum' => '845ba063b798bfa2fba384540fefabc0'
+                'checksum' => '1e0aab8d12530c9f650aa1d9b4273fc1'
             ],
             '03.biography/03._publications' => [
                 'key' => 'biography/_publications',
                 'storage_key' => '03.biography/03._publications',
                 'template' => 'default',
-                'storage_timestamp' => 1742078732,
+                'storage_timestamp' => 1744151984,
                 'markdown' => [
                     'en' => [
-                        'default' => 1740516244
+                        'default' => 1744151984
                     ],
                     'gr' => [
-                        'default' => 1742078732
+                        'default' => 1744151983
                     ]
                 ],
-                'checksum' => '7b6873a35928bf556053257ebe20c481'
+                'checksum' => 'f6cc1b63e94dd0905b1160ff6fd9e26a'
             ],
             '04.contacts' => [
                 'key' => 'contacts',
@@ -332,16 +332,16 @@ return [
                 'key' => 'news/_news',
                 'storage_key' => '05.news/01._news',
                 'template' => 'features',
-                'storage_timestamp' => 1742079158,
+                'storage_timestamp' => 1744154035,
                 'markdown' => [
                     'en' => [
-                        'features' => 1741421367
+                        'features' => 1744154035
                     ],
                     'gr' => [
-                        'features' => 1742079158
+                        'features' => 1744153588
                     ]
                 ],
-                'checksum' => '484b30c5aee5290666b04cebbda2b757'
+                'checksum' => '019684da8f9f1eceb00fd3ffb5f02de4'
             ],
             '05.news/02._newsletter' => [
                 'key' => 'news/_newsletter',

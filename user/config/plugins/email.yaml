@@ -7,10 +7,12 @@ mailer:
     server: 192.168.30.11
     port: 25
     encryption: none
+    user: null
+    password: null
   sendmail:
-    bin: "/usr/sbin/sendmail -bs"
+    bin: '/usr/sbin/sendmail -bs'
 content_type: text/html
-debug: false
+debug: true
 cc: null
 bcc: null
 reply_to: null
