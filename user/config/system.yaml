@@ -16,29 +16,25 @@ http_x_forwarded:
   ip: true
 languages:
   supported:
-    - en
     - gr
+    - en
   default_lang: gr
-  translatable_pages: true
-  include_default_lang: false
+  include_default_lang: true
   include_default_lang_file_extension: true
   translations: true
   translations_fallback: true
   session_store_active: true
   http_accept_language: true
-  override_locale: false
+  override_locale: true
   pages_fallback_only: false
   debug: false
+  translatable_pages: true
 home:
+  alias: /home
+  hide_in_urls: false
   aliases:
     en: /home
-    gr: /αρχική
-  hide_in_urls: false
-contacts:
-  aliases:
-    en: /contacts
-    gr: /επικοινωνία
-  hide_in_urls: false
+    gr: /αρχικη
 pages:
   type: regular
   dirs:
@@ -242,3 +238,8 @@ strict_mode:
   yaml_compat: false
   twig_compat: false
   blueprint_compat: false
+contacts:
+  aliases:
+    en: /contacts
+    gr: /επικοινωνία
+  hide_in_urls: false

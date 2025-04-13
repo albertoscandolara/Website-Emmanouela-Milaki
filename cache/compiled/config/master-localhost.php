@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1744215785,
-    'checksum' => '7ac52972722426a79be86d10a8da2830',
+    'timestamp' => 1744218513,
+    'checksum' => 'd3cc536444924b2c820f5cef522ffbeb',
     'files' => [
         'user/config' => [
             'media' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1742920282
+                'modified' => 1744218507
             ],
             'versions' => [
                 'file' => 'user/config/versions.yaml',
@@ -53,7 +53,7 @@ return [
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1735250146
+                'modified' => 1744217882
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
@@ -3885,17 +3885,17 @@ node_modules'
             ],
             'languages' => [
                 'supported' => [
-                    0 => 'en',
-                    1 => 'gr'
+                    0 => 'gr',
+                    1 => 'en'
                 ],
                 'default_lang' => 'gr',
-                'include_default_lang' => false,
+                'include_default_lang' => true,
                 'include_default_lang_file_extension' => true,
                 'translations' => true,
                 'translations_fallback' => true,
                 'session_store_active' => true,
                 'http_accept_language' => true,
-                'override_locale' => false,
+                'override_locale' => true,
                 'content_fallback' => [
                     
                 ],
@@ -3908,7 +3908,7 @@ node_modules'
                 'hide_in_urls' => false,
                 'aliases' => [
                     'en' => '/home',
-                    'gr' => '/αρχική'
+                    'gr' => '/αρχικη'
                 ]
             ],
             'pages' => [

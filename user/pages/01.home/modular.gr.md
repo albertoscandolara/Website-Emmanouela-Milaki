@@ -1,7 +1,7 @@
 ---
 title: Αρχική
 menu: Αρχικη
-slug: αρχική
+slug: αρχικη
 onpage_menu: true
 content:
   items: "@self.modular"

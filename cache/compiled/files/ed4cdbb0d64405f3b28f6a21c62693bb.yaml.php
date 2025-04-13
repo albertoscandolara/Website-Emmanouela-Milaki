@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/config/system.yaml',
-    'modified' => 1742920282,
-    'size' => 4654,
+    'modified' => 1744218507,
+    'size' => 4667,
     'data' => [
         'absolute_urls' => false,
         'timezone' => NULL,
@@ -24,34 +24,28 @@ return [
         ],
         'languages' => [
             'supported' => [
-                0 => 'en',
-                1 => 'gr'
+                0 => 'gr',
+                1 => 'en'
             ],
             'default_lang' => 'gr',
-            'translatable_pages' => true,
-            'include_default_lang' => false,
+            'include_default_lang' => true,
             'include_default_lang_file_extension' => true,
             'translations' => true,
             'translations_fallback' => true,
             'session_store_active' => true,
             'http_accept_language' => true,
-            'override_locale' => false,
+            'override_locale' => true,
             'pages_fallback_only' => false,
-            'debug' => false
+            'debug' => false,
+            'translatable_pages' => true
         ],
         'home' => [
+            'alias' => '/home',
+            'hide_in_urls' => false,
             'aliases' => [
                 'en' => '/home',
-                'gr' => '/αρχική'
-            ],
-            'hide_in_urls' => false
-        ],
-        'contacts' => [
-            'aliases' => [
-                'en' => '/contacts',
-                'gr' => '/επικοινωνία'
-            ],
-            'hide_in_urls' => false
+                'gr' => '/αρχικη'
+            ]
         ],
         'pages' => [
             'type' => 'regular',
@@ -301,6 +295,13 @@ return [
             'yaml_compat' => false,
             'twig_compat' => false,
             'blueprint_compat' => false
+        ],
+        'contacts' => [
+            'aliases' => [
+                'en' => '/contacts',
+                'gr' => '/επικοινωνία'
+            ],
+            'hide_in_urls' => false
         ]
     ]
 ];
