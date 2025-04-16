@@ -29,7 +29,7 @@ form:
     - name: email
       label: Email
       type: email
-      placeholder: Enter your email
+      placeholder: Enter your email test
       validate:
         required: true
 
@@ -47,19 +47,13 @@ form:
 
   process:
     email:
-      - from: "{{ config.plugins.email.from }}"
-        to: "{{ config.plugins.email.to }}"
-        subject: "New Message from {{ form.value.name|e }} {{ form.value.surname|e }}"
-        body: |
-          Hi Emmanouela,
-          You have received a new message.
-
-          **Name:** {{ form.value.name|e }}
-          **Surname:** {{ form.value.surname|e }}
-          **Email:** {{ form.value.email|e }}
-          **Message:**
-          {{ form.value.message }}
+      from: "alberto.alessiocurzel.dev"
+      to: "alberto.scandolara92@gmail.com"
+      subject: "mESSAGGIO DI TEST"
+      body: |
+        Hi Emmanouela
+      process_markdown: true
 
     message: "Thank you for getting in touch!"
-    reset: true
+    reset: false
 ---
