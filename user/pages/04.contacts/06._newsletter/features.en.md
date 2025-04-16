@@ -4,13 +4,13 @@ cache_enable: false
 template: partials/components/form-newsletter
 description: Subscribe for updates on psychology topics and events!
 form:
-  action: /contacts
   name: newsletter_form
+  action: /contacts
   fields:
-    - name: email
+    email:
       label: Email
-      type: email
       placeholder: Enter your email
+      type: email
       validate:
         required: true
 
