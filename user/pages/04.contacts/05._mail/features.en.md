@@ -2,15 +2,15 @@
 title: Contact us
 cache_enable: false
 description: Feel free to reach out! We’ll get back to you shortly.
-content:
-  items: "@self.modular"
 template: partials/components/form-contact-us
 process:
   twig: true
   markdown: false
+
 form:
   action: /contacts
-  name: contact-form
+  name: contact_form
+
   fields:
     - name: name
       label: Name
@@ -46,8 +46,8 @@ form:
       value: Send
 
   process:
-    - email:
-        from: "{{ config.plugins.email.from }}"
+    email:
+      - from: "{{ config.plugins.email.from }}"
         to: "{{ config.plugins.email.to }}"
         subject: "New Message from {{ form.value.name|e }} {{ form.value.surname|e }}"
         body: |
@@ -60,6 +60,6 @@ form:
           **Message:**
           {{ form.value.message }}
 
-    - message: "Thank you for getting in touch!"
-    - reset: true
+    message: "Thank you for getting in touch!"
+    reset: true
 ---

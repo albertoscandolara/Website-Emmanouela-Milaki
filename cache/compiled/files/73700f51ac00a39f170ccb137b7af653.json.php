@@ -2,11 +2,11 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledJsonFile',
     'filename' => 'C:/Users/alber/Downloads/grav-admin-v1.8.0-beta.3/grav-admin/user/data/flex/indexes/pages.json',
-    'modified' => 1744215702,
+    'modified' => 1744817032,
     'size' => 6025,
     'data' => [
         'version' => '1.5',
-        'timestamp' => 1744215702,
+        'timestamp' => 1744817032,
         'count' => 22,
         'index' => [
             '' => [
@@ -27,22 +27,22 @@ return [
                 'key' => 'home',
                 'storage_key' => '01.home',
                 'template' => 'modular',
-                'storage_timestamp' => 1743258189,
+                'storage_timestamp' => 1744218509,
                 'markdown' => [
                     'en' => [
                         'modular' => 1742630877
                     ],
                     'gr' => [
-                        'modular' => 1743258189
+                        'modular' => 1744218509
                     ]
                 ],
                 'children' => [
-                    '01._intro' => 1742330165,
-                    '02._psychotherapy' => 1742077234,
-                    '03._ethics' => 1742077309,
-                    '04._children' => 1742077456
+                    '01._intro' => 1743367176,
+                    '02._psychotherapy' => 1743366795,
+                    '03._ethics' => 1743367171,
+                    '04._children' => 1743367288
                 ],
-                'checksum' => 'dee07ef02600bfd99f7b2cda7e4bb784'
+                'checksum' => 'e1264794faa32059d69f01db6ee1d926'
             ],
             '01.home/01._intro' => [
                 'key' => 'home/_intro',

@@ -10,7 +10,7 @@ mailer:
     user: null
     password: null
   sendmail:
-    bin: '/usr/sbin/sendmail -bs'
+    bin: "/usr/sbin/sendmail -bs"
 content_type: text/html
 debug: true
 cc: null
