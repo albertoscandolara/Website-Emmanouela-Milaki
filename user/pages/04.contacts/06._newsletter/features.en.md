@@ -15,7 +15,8 @@ form:
         required: true
 
   buttons:
-    - type: submit
+    submit:
+      type: submit
       value: Subscribe
 
   process:
