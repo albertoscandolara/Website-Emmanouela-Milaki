@@ -1,7 +1,7 @@
 ---
 title: Newsletter
 cache_enable: false
-template: partials/components/form-newsletter
+template: modular/contacts/form-newsletter
 description: Subscribe for updates on psychology topics and events!
 form:
   name: newsletter_form
@@ -22,6 +22,7 @@ form:
   process:
     email:
       - from: "{{ config.plugins.email.from }}"
+        reply_to: "{{ form.value.email }}"
         to: "{{ config.plugins.email.to }}"
         subject: "Newsletter subscription request from {{ form.value.email|e }}"
         body: |

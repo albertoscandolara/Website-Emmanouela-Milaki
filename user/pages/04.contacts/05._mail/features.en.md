@@ -2,7 +2,7 @@
 title: Contact us
 cache_enable: false
 description: Feel free to reach out! We’ll get back to you shortly.
-template: partials/components/form-contact-us
+template: modular/contacts/form-contact-us
 process:
   twig: true
   markdown: false
@@ -47,7 +47,8 @@ form:
 
   process:
     email:
-      from: "alberto.alessiocurzel.dev"
+      from: "{{ config.plugins.email.from }}"
+      reply_to: "{{ form.value.email }}"
       to: "alberto.scandolara92@gmail.com"
       subject: "mESSAGGIO DI TEST"
       body: |
