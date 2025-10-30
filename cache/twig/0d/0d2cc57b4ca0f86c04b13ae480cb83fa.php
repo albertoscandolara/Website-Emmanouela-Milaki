@@ -64,7 +64,7 @@ class __TwigTemplate_4c836a6bcc8229622702faed644fc0db extends \Twig\Template
         echo "<!DOCTYPE html>
 <html lang=\"";
         // line 6
-        echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["grav"] ?? null), "language", [], "any", false, false, false, 6), "getActive", [], "any", false, false, false, 6)) ? (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["grav"] ?? null), "language", [], "any", false, false, false, 6), "getActive", [], "any", false, false, false, 6)) : (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["grav"] ?? null), "config", [], "any", false, false, false, 6), "site", [], "any", false, false, false, 6), "default_lang", [], "any", false, false, false, 6))), "html", null, true);
+        echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["grav"] ?? null), "language", [], "any", false, false, false, 6), "getActive", [], "method", false, false, false, 6)) ? (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["grav"] ?? null), "language", [], "any", false, false, false, 6), "getActive", [], "method", false, false, false, 6)) : (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["grav"] ?? null), "config", [], "any", false, false, false, 6), "site", [], "any", false, false, false, 6), "default_lang", [], "any", false, false, false, 6))), "html", null, true);
         echo "\">
 <head>
 ";
@@ -255,7 +255,7 @@ class __TwigTemplate_4c836a6bcc8229622702faed644fc0db extends \Twig\Template
 {% set compress = theme_var('production-mode') ? '.min.css' : '.css' %}
 {% use 'blocks/base.html.twig' %}
 <!DOCTYPE html>
-<html lang=\"{{ grav.language.getActive ?: grav.config.site.default_lang }}\">
+<html lang=\"{{ grav.language.getActive() ?: grav.config.site.default_lang }}\">
 <head>
 {% block head deferred %}
     <meta charset=\"utf-8\" />
