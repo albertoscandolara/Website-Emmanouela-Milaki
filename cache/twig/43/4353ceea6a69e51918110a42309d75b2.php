@@ -37,47 +37,41 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
         $macros["macros"] = $this->macros["macros"] = $this->loadTemplate("macros/macros.html.twig", "partials/menu_mobile.html.twig", 1)->unwrap();
         // line 2
         echo "<section class=\"menu-mobile-wrapper\">
-    <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon\">
-        ☰
-    </label>
     <input type=\"checkbox\" id=\"mobile-menu-toggle\" class=\"mobile-menu-checkbox\">
+    <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon open\">☰</label>
     
     <div class=\"mobile-menu-popup\">
         <section class=\"header\">
-            <section class=\"left\"></section>
             <section class=\"right\">
-                <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon\">
-                    &#10005;
-                </label>
-                <input type=\"checkbox\" id=\"mobile-menu-toggle\" class=\"mobile-menu-checkbox\">
+                <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon close\">&#10005;</label>
             </section>
         </section>
         <section class=\"body\">
             ";
-        // line 24
+        // line 18
         echo "            <nav class=\"navbar\">
                 <ul class=\"nav-links\">
                     ";
-        // line 26
+        // line 20
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["pages"] ?? null), "children", [], "any", false, false, false, 26), "visible", [], "any", false, false, false, 26));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["pages"] ?? null), "children", [], "any", false, false, false, 20), "visible", [], "any", false, false, false, 20));
         foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-            // line 27
+            // line 21
             echo "                    <li class=\"";
-            if ((twig_get_attribute($this->env, $this->source, $context["page"], "active", [], "any", false, false, false, 27) || twig_get_attribute($this->env, $this->source, $context["page"], "activeChild", [], "any", false, false, false, 27))) {
+            if ((twig_get_attribute($this->env, $this->source, $context["page"], "active", [], "any", false, false, false, 21) || twig_get_attribute($this->env, $this->source, $context["page"], "activeChild", [], "any", false, false, false, 21))) {
                 echo "selected";
             }
             echo "\"
                         title=\"";
-            // line 28
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 28)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 28)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 28))), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 22)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 22)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 22))), "html", null, true);
             echo "\">
                         <button>
                             <a href=\"";
-            // line 30
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 30), "html", null, true);
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 24), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 30)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 30)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 30))), "html", null, true);
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 24)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 24)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 24))), "html", null, true);
             echo "</a>
                         </button>
                     </li>
@@ -86,7 +80,7 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 34
+        // line 28
         echo "                </ul>
             </nav>
         </section>
@@ -107,26 +101,20 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  90 => 34,  78 => 30,  73 => 28,  66 => 27,  62 => 26,  58 => 24,  39 => 2,  37 => 1,);
+        return array (  84 => 28,  72 => 24,  67 => 22,  60 => 21,  56 => 20,  52 => 18,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% import 'macros/macros.html.twig' as macros %}
 <section class=\"menu-mobile-wrapper\">
-    <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon\">
-        ☰
-    </label>
     <input type=\"checkbox\" id=\"mobile-menu-toggle\" class=\"mobile-menu-checkbox\">
+    <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon open\">☰</label>
     
     <div class=\"mobile-menu-popup\">
         <section class=\"header\">
-            <section class=\"left\"></section>
             <section class=\"right\">
-                <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon\">
-                    &#10005;
-                </label>
-                <input type=\"checkbox\" id=\"mobile-menu-toggle\" class=\"mobile-menu-checkbox\">
+                <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon close\">&#10005;</label>
             </section>
         </section>
         <section class=\"body\">
