@@ -4,7 +4,6 @@ template: modular/biography/motto
 process:
   twig: true
   markdown: false
-item_title: My motto
 item_image: pics/emmanouela/emmanouela-01.jpg
 blockquote_author: Carl Rogers
 blockquote_image: carl-rogers.jpg

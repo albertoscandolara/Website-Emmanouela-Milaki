@@ -36,35 +36,23 @@ class __TwigTemplate_eaa8c9783fa54afd0a76cd6d57ec41a8 extends \Twig\Template
         // line 1
         echo "<article class=\"intro-wrapper\">
     <div class=\"intro\">
-        ";
-        // line 3
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 3), "item_title", [], "any", false, false, false, 3)) {
-            // line 4
-            echo "            <h2 class=\"title\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 4), "item_title", [], "any", false, false, false, 4), "html", null, true);
-            echo "</h2>
-        ";
-        }
-        // line 6
-        echo "        <section class=\"body\">
+        <section class=\"body\">
             <section class=\"left\">
                 ";
-        // line 8
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 8), "item_paragraph", [], "any", false, false, false, 8)) {
-            // line 9
+        // line 5
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 5), "item_paragraph", [], "any", false, false, false, 5)) {
+            // line 6
             echo "                    <div class=\"paragraph-container\">
                         <p class=\"paragraph\">";
-            // line 10
-            echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 10), "item_paragraph", [], "any", false, false, false, 10);
+            // line 7
+            echo twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 7), "item_paragraph", [], "any", false, false, false, 7);
             echo "</p>
                     </div>
                 ";
         }
-        // line 13
+        // line 10
         echo "            </section>
-            ";
-        // line 26
-        echo "        </section>
+        </section>
     </div>
 </article>
 ";
@@ -82,16 +70,13 @@ class __TwigTemplate_eaa8c9783fa54afd0a76cd6d57ec41a8 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  67 => 26,  64 => 13,  58 => 10,  55 => 9,  53 => 8,  49 => 6,  43 => 4,  41 => 3,  37 => 1,);
+        return array (  54 => 10,  48 => 7,  45 => 6,  43 => 5,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<article class=\"intro-wrapper\">
     <div class=\"intro\">
-        {% if module.header.item_title %}
-            <h2 class=\"title\">{{ module.header.item_title }}</h2>
-        {% endif %}
         <section class=\"body\">
             <section class=\"left\">
                 {% if module.header.item_paragraph %}
@@ -100,21 +85,9 @@ class __TwigTemplate_eaa8c9783fa54afd0a76cd6d57ec41a8 extends \Twig\Template
                     </div>
                 {% endif %}
             </section>
-            {# <section class=\"right\">
-                {% if module.header.item_image %}
-                    {% set localImage = module.media[module.header.item_image] %}
-                    {% if localImage %}
-                        {% set imageUrl = localImage.url %}
-                    {% else %}
-                        {% set imageUrl = theme_url ~ '/images/' ~ module.header.item_image %}
-                    {% endif %}
-                        <img class=\"image\" src=\"{{ imageUrl }}\" alt=\"{{ module.header.item_title }}\">
-                        </img>
-                {% endif %}
-            </section> #}
         </section>
     </div>
 </article>
-", "modular/home/intro.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\home\\intro.html.twig");
+", "modular/home/intro.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\home\\intro.html.twig");
     }
 }

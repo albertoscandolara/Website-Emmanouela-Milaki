@@ -105,6 +105,6 @@ class __TwigTemplate_6beeae98c5d19f5f7eead7ce7c07eb22 extends \Twig\Template
             {% endfor %}
         </ul>
     </nav>
-</section>", "partials/menu_desktop.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\menu_desktop.html.twig");
+</section>", "partials/menu_desktop.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\menu_desktop.html.twig");
     }
 }

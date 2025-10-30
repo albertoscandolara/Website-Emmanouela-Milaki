@@ -176,6 +176,6 @@ class __TwigTemplate_beb665343746c2a4f771c6bef99a0f57 extends \Twig\Template
         </section>
     </div>
 </article>
-", "modular/home/template-1.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\home\\template-1.html.twig");
+", "modular/home/template-1.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\home\\template-1.html.twig");
     }
 }

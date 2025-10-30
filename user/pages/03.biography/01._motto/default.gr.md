@@ -4,10 +4,9 @@ template: modular/biography/motto
 process:
   twig: true
   markdown: false
-item_title: Το μότο μου
 item_image: pics/emmanouela/emmanouela-01.jpg
 blockquote_author: Carl Rogers
 blockquote_image: carl-rogers.jpg
-blockquote_quote: 'Οι άνθρωποι είναι εξίσου υπέροχοι με τα ηλιοβασιλέματα, αν τους αφήσεις να είναι. Όταν κοιτάζω ένα ηλιοβασίλεμα, δεν πιάνω τον εαυτό μου να λέει "χρειάζεται να απαλύνω λίγο το πορτοκαλί στην δεξιά γωνία", δεν προσπαθώ να ελέγξω ένα ηλιοβασίλεμα. Το παρακολουθώ με δέος καθώς αναδύεται'
+blockquote_quote: 'People are just as wonderful as sunsets if you let them be. When I look at a sunset, I don''t find myself saying, "soften the orange a bit on the right hand corner", I don''t try to control a sunset. I watch it with awe as it unfolds.'
 blockquote_source:
 ---

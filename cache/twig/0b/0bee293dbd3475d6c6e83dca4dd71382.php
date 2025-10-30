@@ -149,6 +149,6 @@ $context["publication"], "link", [], "any", false, false, false, 19)]));
         </section>
     </div>
 </article>
-", "modular/biography/publications.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\biography\\publications.html.twig");
+", "modular/biography/publications.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\biography\\publications.html.twig");
     }
 }

@@ -117,6 +117,6 @@ class __TwigTemplate_f2490d37b5a194eea3ed4ad907a7bb5b extends \Twig\Template
             </section>
         {% endfor %}
     </div>
-</section>", "partials/body.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\body.html.twig");
+</section>", "partials/body.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\body.html.twig");
     }
 }

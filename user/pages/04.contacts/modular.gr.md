@@ -13,8 +13,8 @@ content:
       - _opening-hours
       - _phone
       - _social
-      - _mail
-      - _newsletter
+      # - _mail
+      # - _newsletter
   routable: true
 process:
   twig: true

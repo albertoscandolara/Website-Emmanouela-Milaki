@@ -136,6 +136,6 @@ class __TwigTemplate_f830b66595f611e419cfb6b4ad4c48e8 extends \Twig\Template
             </div>
         {% endif %} #}
     </div>
-</section>", "partials/components/blockquote.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\components\\blockquote.html.twig");
+</section>", "partials/components/blockquote.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\components\\blockquote.html.twig");
     }
 }

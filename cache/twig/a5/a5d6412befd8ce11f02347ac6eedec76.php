@@ -67,6 +67,6 @@ class __TwigTemplate_d12a8fac0e053a7d17fa810409b93840 extends \Twig\Template
     <p>Subscribe to our Newsletter to stay informed about school psychology issues, as well as the organization of lectures, experiential workshops and other activities!</p>
 
     {% include \"forms/form.html.twig\" with { form: forms('newsletter') } %}
-</div>", "modular/news/newsletter-form.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\news\\newsletter-form.html.twig");
+</div>", "modular/news/newsletter-form.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\news\\newsletter-form.html.twig");
     }
 }

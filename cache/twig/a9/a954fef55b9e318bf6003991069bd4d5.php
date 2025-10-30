@@ -78,6 +78,6 @@ class __TwigTemplate_f41a4dd1a3baca7e5d59efbf3affb8dd extends \Twig\Template
   {% set status_mapping = {'success':'green', 'error': 'red', 'warning': 'yellow'} %}
   {% set message = inline_errors and form.messages ? \"GRAV.FORM.VALIDATION_FAIL\"|t : form.message %}
     <div class=\"toast toast-{{ form.status }} {{ status_mapping[form.status] ?: 'green' }} mt-2 mb-2\">{{ message|raw }}</div>
-{% endif %}", "partials/form-messages.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\form-messages.html.twig");
+{% endif %}", "partials/form-messages.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\form-messages.html.twig");
     }
 }

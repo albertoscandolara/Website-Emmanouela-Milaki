@@ -36,67 +36,57 @@ class __TwigTemplate_b6f20e113a8a59598a3fd88e38db7b38 extends \Twig\Template
         // line 1
         echo "<article class=\"motto-wrapper\">
     <div class=\"motto\">
-        ";
-        // line 3
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 3), "item_title", [], "any", false, false, false, 3)) {
-            // line 4
-            echo "            <h2 class=\"title\">";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 4), "item_title", [], "any", false, false, false, 4), "html", null, true);
-            echo "</h2>
-        ";
-        }
-        // line 6
-        echo "        <section class=\"body\">
+        <section class=\"body\">
             ";
-        // line 7
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 7), "blockquote_quote", [], "any", false, false, false, 7)) {
-            // line 8
+        // line 4
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 4), "blockquote_quote", [], "any", false, false, false, 4)) {
+            // line 5
             echo "                <div class=\"blockquote-container\">
                     ";
-            // line 9
-            $context["image"] = (($__internal_compile_0 = twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "media", [], "any", false, false, false, 9)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0[twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 9), "blockquote_image", [], "any", false, false, false, 9)] ?? null) : null);
-            // line 10
+            // line 6
+            $context["image"] = (($__internal_compile_0 = twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "media", [], "any", false, false, false, 6)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0[twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 6), "blockquote_image", [], "any", false, false, false, 6)] ?? null) : null);
+            // line 7
             echo "                    ";
-            $this->loadTemplate("partials/components/blockquote.html.twig", "modular/biography/motto.html.twig", 10)->display(twig_array_merge($context, ["author" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,             // line 11
-($context["module"] ?? null), "header", [], "any", false, false, false, 11), "blockquote_author", [], "any", false, false, false, 11), "image" =>             // line 12
-($context["image"] ?? null), "quote" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,             // line 13
-($context["module"] ?? null), "header", [], "any", false, false, false, 13), "blockquote_quote", [], "any", false, false, false, 13), "source" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,             // line 14
-($context["module"] ?? null), "header", [], "any", false, false, false, 14), "blockquote_source", [], "any", false, false, false, 14)]));
-            // line 16
+            $this->loadTemplate("partials/components/blockquote.html.twig", "modular/biography/motto.html.twig", 7)->display(twig_array_merge($context, ["author" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,             // line 8
+($context["module"] ?? null), "header", [], "any", false, false, false, 8), "blockquote_author", [], "any", false, false, false, 8), "image" =>             // line 9
+($context["image"] ?? null), "quote" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,             // line 10
+($context["module"] ?? null), "header", [], "any", false, false, false, 10), "blockquote_quote", [], "any", false, false, false, 10), "source" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,             // line 11
+($context["module"] ?? null), "header", [], "any", false, false, false, 11), "blockquote_source", [], "any", false, false, false, 11)]));
+            // line 13
             echo "                </div>
             ";
         }
-        // line 18
+        // line 15
         echo "            ";
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 18), "item_image", [], "any", false, false, false, 18)) {
-            // line 19
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 15), "item_image", [], "any", false, false, false, 15)) {
+            // line 16
             echo "                ";
-            $context["localImage"] = (($__internal_compile_1 = twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "media", [], "any", false, false, false, 19)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1[twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 19), "item_image", [], "any", false, false, false, 19)] ?? null) : null);
-            // line 20
+            $context["localImage"] = (($__internal_compile_1 = twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "media", [], "any", false, false, false, 16)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1[twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 16), "item_image", [], "any", false, false, false, 16)] ?? null) : null);
+            // line 17
             echo "                ";
             if (($context["localImage"] ?? null)) {
-                // line 21
+                // line 18
                 echo "                    ";
-                $context["imageUrl"] = twig_get_attribute($this->env, $this->source, ($context["localImage"] ?? null), "url", [], "any", false, false, false, 21);
-                // line 22
+                $context["imageUrl"] = twig_get_attribute($this->env, $this->source, ($context["localImage"] ?? null), "url", [], "any", false, false, false, 18);
+                // line 19
                 echo "                ";
             } else {
-                // line 23
+                // line 20
                 echo "                    ";
-                $context["imageUrl"] = ((($context["theme_url"] ?? null) . "/images/") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 23), "item_image", [], "any", false, false, false, 23));
-                // line 24
+                $context["imageUrl"] = ((($context["theme_url"] ?? null) . "/images/") . twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 20), "item_image", [], "any", false, false, false, 20));
+                // line 21
                 echo "                ";
             }
-            // line 25
+            // line 22
             echo "                    <img class=\"image\" src=\"";
             echo twig_escape_filter($this->env, ($context["imageUrl"] ?? null), "html", null, true);
             echo "\" alt=\"";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 25), "item_title", [], "any", false, false, false, 25), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["module"] ?? null), "header", [], "any", false, false, false, 22), "item_title", [], "any", false, false, false, 22), "html", null, true);
             echo "\">
                     </img>
             ";
         }
-        // line 28
+        // line 25
         echo "        </section>
     </div>
 </article>
@@ -115,16 +105,13 @@ class __TwigTemplate_b6f20e113a8a59598a3fd88e38db7b38 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  100 => 28,  91 => 25,  88 => 24,  85 => 23,  82 => 22,  79 => 21,  76 => 20,  73 => 19,  70 => 18,  66 => 16,  64 => 14,  63 => 13,  62 => 12,  61 => 11,  59 => 10,  57 => 9,  54 => 8,  52 => 7,  49 => 6,  43 => 4,  41 => 3,  37 => 1,);
+        return array (  90 => 25,  81 => 22,  78 => 21,  75 => 20,  72 => 19,  69 => 18,  66 => 17,  63 => 16,  60 => 15,  56 => 13,  54 => 11,  53 => 10,  52 => 9,  51 => 8,  49 => 7,  47 => 6,  44 => 5,  42 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<article class=\"motto-wrapper\">
     <div class=\"motto\">
-        {% if module.header.item_title %}
-            <h2 class=\"title\">{{ module.header.item_title }}</h2>
-        {% endif %}
         <section class=\"body\">
             {% if module.header.blockquote_quote %}
                 <div class=\"blockquote-container\">
@@ -150,6 +137,6 @@ class __TwigTemplate_b6f20e113a8a59598a3fd88e38db7b38 extends \Twig\Template
         </section>
     </div>
 </article>
-", "modular/biography/motto.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\biography\\motto.html.twig");
+", "modular/biography/motto.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\biography\\motto.html.twig");
     }
 }

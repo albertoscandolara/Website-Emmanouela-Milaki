@@ -175,6 +175,6 @@ class __TwigTemplate_ec3ebe4323587bbc960e31ac1ade48f2 extends \Twig\Template
             {% endif %}
         </div>
     </div>
-</section>", "partials/components/initiative.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\components\\initiative.html.twig");
+</section>", "partials/components/initiative.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\components\\initiative.html.twig");
     }
 }

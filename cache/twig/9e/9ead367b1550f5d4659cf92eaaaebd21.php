@@ -106,6 +106,6 @@ class __TwigTemplate_664dbca66b532396c6b0c7ba5babbfc8 extends \Twig\Template
         </section>
     </div>
 </article>
-", "modular/biography/biography.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\biography\\biography.html.twig");
+", "modular/biography/biography.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\biography\\biography.html.twig");
     }
 }

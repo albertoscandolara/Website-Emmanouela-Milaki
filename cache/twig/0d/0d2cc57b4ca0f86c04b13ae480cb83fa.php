@@ -302,7 +302,7 @@ class __TwigTemplate_4c836a6bcc8229622702faed644fc0db extends \Twig\Template
     </section>
 </body>
 </html>
-", "partials/base.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\base.html.twig");
+", "partials/base.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\base.html.twig");
     }
     private $deferred;
 }

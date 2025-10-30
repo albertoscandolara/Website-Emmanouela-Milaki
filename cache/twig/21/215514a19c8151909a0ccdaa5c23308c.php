@@ -113,25 +113,17 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
                 </iframe>
             </div>
         </section>
-        <section class=\"footer-section newsletter\">
-            <h3>Newsletter</h3>
-            <div id=\"container-newsletter\" class=\"footer-section-container\">
-                <span>Subscribe for updates on psychology topics and events!</span>
-                <div class=\"input-container\">
-                    <input type=\"email\" placeholder=\"Enter your email\" required>
-                    <button type=\"submit\">Subscribe</button>
-                </div>
-            </div>
-        </section>
-    </section>
+        ";
+        // line 63
+        echo "    </section>
     <section style=\"text-align: center;\">
         <span>
             ";
-        // line 64
+        // line 66
         echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "FOOTER_DISCLAIMER"), "html", null, true);
         echo "<br>
             © <script>document.write(new Date().getFullYear());</script> ";
-        // line 65
+        // line 67
         echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "EMMANOUELA_MILAKI"), "html", null, true);
         echo ". ";
         echo twig_escape_filter($this->env, $this->extensions['Grav\Common\Twig\Extension\GravExtension']->translate($this->env, "FOOTER_ALL_RIGHTS_RESERVED"), "html", null, true);
@@ -155,7 +147,7 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  135 => 65,  131 => 64,  105 => 43,  100 => 41,  89 => 33,  84 => 31,  78 => 28,  73 => 26,  67 => 23,  62 => 21,  42 => 4,  37 => 1,);
+        return array (  127 => 67,  123 => 66,  118 => 63,  105 => 43,  100 => 41,  89 => 33,  84 => 31,  78 => 28,  73 => 26,  67 => 23,  62 => 21,  42 => 4,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -210,6 +202,7 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
                 </iframe>
             </div>
         </section>
+        {#
         <section class=\"footer-section newsletter\">
             <h3>Newsletter</h3>
             <div id=\"container-newsletter\" class=\"footer-section-container\">
@@ -220,6 +213,7 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
                 </div>
             </div>
         </section>
+        #}
     </section>
     <section style=\"text-align: center;\">
         <span>
@@ -227,6 +221,6 @@ class __TwigTemplate_223cfee610a2c914010d83107d69bed2 extends \Twig\Template
             © <script>document.write(new Date().getFullYear());</script> {{ \"EMMANOUELA_MILAKI\"|t}}. {{ \"FOOTER_ALL_RIGHTS_RESERVED\"|t }}. {{ \"FOOTER_ICONS_BY\"|t }} <a target=\"_blank\" href=\"https://icons8.com\">Icons8.</a>
         </span>
     </section>
-</footer>", "partials/footer.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\footer.html.twig");
+</footer>", "partials/footer.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\footer.html.twig");
     }
 }

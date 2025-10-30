@@ -72,6 +72,6 @@ class __TwigTemplate_55362f4747c76fb80de46859369135e8 extends \Twig\Template
 
 {% block body %}
     {% include 'partials/body.html.twig' %}
-{% endblock %}", "modular.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular.html.twig");
+{% endblock %}", "modular.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular.html.twig");
     }
 }

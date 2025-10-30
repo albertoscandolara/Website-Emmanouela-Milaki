@@ -92,6 +92,6 @@ class __TwigTemplate_d768e07d64d6eb9aed0fb32a02af2966 extends \Twig\Template
         return new Source("{% for meta in page.metadata %}
     <meta {% if meta.name %}name=\"{{ meta.name|e }}\" {% endif %}{% if meta.http_equiv %}http-equiv=\"{{ meta.http_equiv|e }}\" {% endif %}{% if meta.charset %}charset=\"{{ meta.charset|e }}\" {% endif %}{% if meta.property %}property=\"{{ meta.property|e }}\" {% endif %}{% if meta.content %}content=\"{{ meta.content|raw }}\" {% endif %}/>
 {% endfor %}
-", "partials/metadata.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\system\\templates\\partials\\metadata.html.twig");
+", "partials/metadata.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\system\\templates\\partials\\metadata.html.twig");
     }
 }

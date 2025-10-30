@@ -100,6 +100,6 @@ class __TwigTemplate_f017dc4b07b434dc9dc1cdd02fd2d8bf extends \Twig\Template
             {% endfor %}
         </ul>
     </section>
-</article>", "modular/contacts/social.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\contacts\\social.html.twig");
+</article>", "modular/contacts/social.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\contacts\\social.html.twig");
     }
 }

@@ -166,6 +166,6 @@ class __TwigTemplate_4e1a516177e28fd4e766f9e7a4aa58cb extends \Twig\Template
     </div>
 </article>
 
-", "modular/home/template-2.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\home\\template-2.html.twig");
+", "modular/home/template-2.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\home\\template-2.html.twig");
     }
 }

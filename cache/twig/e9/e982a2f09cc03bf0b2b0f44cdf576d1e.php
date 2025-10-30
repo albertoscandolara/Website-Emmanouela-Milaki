@@ -126,6 +126,6 @@ class __TwigTemplate_5ce5f123692e38680246fe439df6d4e5 extends \Twig\Template
             </tbody>
         </table>
     </div>
-</article>", "modular/contacts/opening-hours.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\contacts\\opening-hours.html.twig");
+</article>", "modular/contacts/opening-hours.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\contacts\\opening-hours.html.twig");
     }
 }

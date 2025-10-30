@@ -14,6 +14,6 @@ item_paragraph: "
 item_title: "Η προσέγγιση μου με τα παιδιά..."
 blockquote_author: "Luis Pasteur"
 blockquote_image: louis-pasteur.jpg
-blockquote_quote: "Όταν προσεγγίζω ένα παιδί, με εμπνέει δύο συναισθήματα:<br> <strong>τρυφερότητα</strong> για αυτό που είναι και<br> <strong>σεβασμός</strong> για αυτό που μπορεί να γίνει.\n"
+blockquote_quote: "When I approach a child, he/she inspires in me two sentiments:<br> <strong>tenderness</strong> for what he/she is and<br> <strong>respect</strong> for what he/she may become.\n"
 media_order: "louis-pasteur.jpg,mother-child.jpg"
 ---

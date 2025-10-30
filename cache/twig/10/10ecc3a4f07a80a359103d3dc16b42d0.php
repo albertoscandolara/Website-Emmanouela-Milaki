@@ -185,6 +185,6 @@ $context["service"], "description", [], "any", false, false, false, 27)]));
             </ul>
         </section>
     </div>
-</article>", "modular/services/services.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\modular\\services\\services.html.twig");
+</article>", "modular/services/services.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\modular\\services\\services.html.twig");
     }
 }

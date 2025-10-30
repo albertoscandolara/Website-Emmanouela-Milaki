@@ -140,6 +140,6 @@ class __TwigTemplate_0a614f28c987f49e21c4488657cade25 extends \Twig\Template
             </div>
         </div>
     </section>
-</header>", "partials/header.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\header.html.twig");
+</header>", "partials/header.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\header.html.twig");
     }
 }

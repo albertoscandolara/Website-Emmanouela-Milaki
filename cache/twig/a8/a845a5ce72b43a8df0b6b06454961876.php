@@ -65,6 +65,6 @@ class __TwigTemplate_0524c6560e0d0429a6f2dc4b0a428bc4 extends \Twig\Template
     {
         return new Source("{% block content_surround %}
 {% block content %}{% endblock %}
-{% endblock %}", "blocks/base.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\blocks\\base.html.twig");
+{% endblock %}", "blocks/base.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\blocks\\base.html.twig");
     }
 }

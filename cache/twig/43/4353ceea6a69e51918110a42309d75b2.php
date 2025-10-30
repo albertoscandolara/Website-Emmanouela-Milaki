@@ -150,6 +150,6 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
         </section>
         <section class=\"footer\"></section>
     </div>
-</section>", "partials/menu_mobile.html.twig", "C:\\Users\\alber\\Downloads\\grav-admin-v1.8.0-beta.3\\grav-admin\\user\\themes\\quark\\templates\\partials\\menu_mobile.html.twig");
+</section>", "partials/menu_mobile.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\menu_mobile.html.twig");
     }
 }
