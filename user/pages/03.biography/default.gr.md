@@ -1,6 +1,6 @@
 ---
 title: Βιογραφικό
-menu: Βιογραφικο
+menu: Βιογραφικό
 slug: βιογραφικό
 onpage_menu: true
 content:

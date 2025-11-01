@@ -1,6 +1,6 @@
 ---
 title: Αρχική
-menu: Αρχικη
+menu: Αρχική
 slug: αρχικη
 onpage_menu: true
 content:

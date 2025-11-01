@@ -1,6 +1,6 @@
 ---
 title: Υπηρεσίες
-menu: Υπηρεσιες
+menu: Υπηρεσίες
 slug: υπηρεσίες
 onpage_menu: true
 content:

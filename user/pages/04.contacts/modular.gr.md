@@ -1,6 +1,6 @@
 ---
 title: Επικοινωνία
-menu: Επικοινωνια
+menu: Επικοινωνία
 slug: επικοινωνία
 onpage_menu: true
 content:

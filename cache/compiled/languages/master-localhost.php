@@ -1,17 +1,17 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1761771999,
-    'checksum' => '30116776334a526bc4f215c7ae600cb8',
+    'timestamp' => 1762026497,
+    'checksum' => '9a88f3562bbe5864a3c2c1aa4bbf0c54',
     'files' => [
         'user/languages' => [
             'en' => [
                 'file' => 'user/languages/en.yaml',
-                'modified' => 1761541671
+                'modified' => 1762026402
             ],
             'gr' => [
                 'file' => 'user/languages/gr.yaml',
-                'modified' => 1761541671
+                'modified' => 1762026402
             ]
         ],
         'system/languages' => [
@@ -3865,7 +3865,7 @@ Path: `%2$s`
                     'ERROR4' => 'Unrecognized expression'
                 ]
             ],
-            'HEADER_NAME' => 'Emmanuela Milaki, MA',
+            'HEADER_NAME' => 'Emmanuela Milaki',
             'HEADER_JOB' => 'Individual & Family Therapist',
             'ADDRESS' => 'Address',
             'CONNECT_WITH_ME_ON' => 'Connect with me on',
@@ -47600,14 +47600,14 @@ Slóð: `%2$s`
             ]
         ],
         'gr' => [
-            'HEADER_NAME' => 'Eμμανουέλα Μηλάκη, MA',
+            'HEADER_NAME' => 'Eμμανουέλα Μηλάκη',
             'HEADER_JOB' => 'Ατομική & Οικογενειακή Θεραπεία',
             'ADDRESS' => 'Διεύθυνση',
             'CONNECT_WITH_ME_ON' => 'Συνδεθείτε μαζί μου στο',
             'GIVE_US_A_CALL' => 'Καλέστε μας',
             'EMMANOUELA_MILAKI' => 'Eμμανουέλα Μηλάκη',
-            'CLOSED' => 'Κλειστό',
-            'OPEN' => 'Ανοιχτό',
+            'CLOSED' => 'Κλειστά',
+            'OPEN' => 'Ανοιχτά',
             'READ_MODE' => 'Διαβάστε περισσότερα',
             'HERACLION' => 'Ηράκλειο',
             'NIKOLAIDI' => 'Νικολαΐδη',
