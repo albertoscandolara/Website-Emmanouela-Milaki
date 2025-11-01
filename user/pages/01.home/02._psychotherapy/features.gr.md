@@ -14,6 +14,6 @@ item_paragraph: "
 item_title: "Το ταξίδι της ψυχοθεραπείας..."
 blockquote_author: "Carl Gustav Jung"
 blockquote_image: carl-gustav-jung.jpg
-blockquote_quote: "Δεν είμαι αυτό που μου συνέβη.<br> Είμαι αυτό που <strong>επιλέγω να γίνω</strong>.\n"
+blockquote_quote: "I am not what has happened to me.<br> I am what I <strong>choose to become</strong>.\n"
 media_order: "carl-gustav-jung.jpg,mount-fuji.jpg"
 ---

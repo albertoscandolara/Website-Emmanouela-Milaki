@@ -1,28 +1,31 @@
 {% import 'macros/macros.html.twig' as macros %}
 <section class="menu-mobile-wrapper">
+    <!-- One checkbox only -->
     <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox">
-    <label for="mobile-menu-toggle" class="mobile-menu-icon open">☰</label>
-    
+
+    <!-- Open icon -->
+    <label for="mobile-menu-toggle" class="mobile-menu-icon open">
+        ☰
+    </label>
+
     <div class="mobile-menu-popup">
         <section class="header">
+            <section class="left"></section>
             <section class="right">
-                <label for="mobile-menu-toggle" class="mobile-menu-icon close">&#10005;</label>
+                <!-- Close icon -->
+                <label for="mobile-menu-toggle" class="mobile-menu-icon close">
+                    &#10005;
+                </label>
             </section>
         </section>
+
         <section class="body">
-            {# <div class="language-switcher-container">
-                {% block language_switcher %}
-                    {% include 'partials/components/language-switcher.html.twig' %}
-                {% endblock %}
-            </div> #}
             <nav class="navbar">
                 <ul class="nav-links">
                     {% for page in pages.children.visible %}
                     <li class="{% if page.active or page.activeChild %}selected{% endif %}"
                         title="{{ page.menu ?: page.title }}">
-                        <button>
-                            <a href="{{ page.url }}">{{ page.menu ?: page.title }}</a>
-                        </button>
+                        <a href="{{ page.url }}">{{ page.menu ?: page.title }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -31,3 +34,12 @@
         <section class="footer"></section>
     </div>
 </section>
+<script>
+  document.querySelectorAll('.mobile-menu-icon').forEach(label => {
+    label.addEventListener('click', e => {
+      e.preventDefault();
+      const checkbox = document.getElementById('mobile-menu-toggle');
+      checkbox.checked = !checkbox.checked;
+    });
+  });
+</script>

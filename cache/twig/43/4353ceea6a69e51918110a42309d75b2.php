@@ -37,56 +37,71 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
         $macros["macros"] = $this->macros["macros"] = $this->loadTemplate("macros/macros.html.twig", "partials/menu_mobile.html.twig", 1)->unwrap();
         // line 2
         echo "<section class=\"menu-mobile-wrapper\">
+    <!-- One checkbox only -->
     <input type=\"checkbox\" id=\"mobile-menu-toggle\" class=\"mobile-menu-checkbox\">
-    <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon open\">☰</label>
-    
+
+    <!-- Open icon -->
+    <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon open\">
+        ☰
+    </label>
+
     <div class=\"mobile-menu-popup\">
         <section class=\"header\">
+            <section class=\"left\"></section>
             <section class=\"right\">
-                <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon close\">&#10005;</label>
+                <!-- Close icon -->
+                <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon close\">
+                    &#10005;
+                </label>
             </section>
         </section>
+
         <section class=\"body\">
-            ";
-        // line 18
-        echo "            <nav class=\"navbar\">
+            <nav class=\"navbar\">
                 <ul class=\"nav-links\">
                     ";
-        // line 20
+        // line 25
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["pages"] ?? null), "children", [], "any", false, false, false, 20), "visible", [], "any", false, false, false, 20));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["pages"] ?? null), "children", [], "any", false, false, false, 25), "visible", [], "any", false, false, false, 25));
         foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-            // line 21
+            // line 26
             echo "                    <li class=\"";
-            if ((twig_get_attribute($this->env, $this->source, $context["page"], "active", [], "any", false, false, false, 21) || twig_get_attribute($this->env, $this->source, $context["page"], "activeChild", [], "any", false, false, false, 21))) {
+            if ((twig_get_attribute($this->env, $this->source, $context["page"], "active", [], "any", false, false, false, 26) || twig_get_attribute($this->env, $this->source, $context["page"], "activeChild", [], "any", false, false, false, 26))) {
                 echo "selected";
             }
             echo "\"
                         title=\"";
-            // line 22
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 22)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 22)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 22))), "html", null, true);
+            // line 27
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 27)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 27)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 27))), "html", null, true);
             echo "\">
-                        <button>
-                            <a href=\"";
-            // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 24), "html", null, true);
+                        <a href=\"";
+            // line 28
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["page"], "url", [], "any", false, false, false, 28), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 24)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 24)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 24))), "html", null, true);
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 28)) ? (twig_get_attribute($this->env, $this->source, $context["page"], "menu", [], "any", false, false, false, 28)) : (twig_get_attribute($this->env, $this->source, $context["page"], "title", [], "any", false, false, false, 28))), "html", null, true);
             echo "</a>
-                        </button>
                     </li>
                     ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 28
+        // line 31
         echo "                </ul>
             </nav>
         </section>
         <section class=\"footer\"></section>
     </div>
-</section>";
+</section>
+<script>
+  document.querySelectorAll('.mobile-menu-icon').forEach(label => {
+    label.addEventListener('click', e => {
+      e.preventDefault();
+      const checkbox = document.getElementById('mobile-menu-toggle');
+      checkbox.checked = !checkbox.checked;
+    });
+  });
+</script>";
     }
 
     public function getTemplateName()
@@ -101,36 +116,39 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
 
     public function getDebugInfo()
     {
-        return array (  84 => 28,  72 => 24,  67 => 22,  60 => 21,  56 => 20,  52 => 18,  39 => 2,  37 => 1,);
+        return array (  90 => 31,  79 => 28,  75 => 27,  68 => 26,  64 => 25,  39 => 2,  37 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% import 'macros/macros.html.twig' as macros %}
 <section class=\"menu-mobile-wrapper\">
+    <!-- One checkbox only -->
     <input type=\"checkbox\" id=\"mobile-menu-toggle\" class=\"mobile-menu-checkbox\">
-    <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon open\">☰</label>
-    
+
+    <!-- Open icon -->
+    <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon open\">
+        ☰
+    </label>
+
     <div class=\"mobile-menu-popup\">
         <section class=\"header\">
+            <section class=\"left\"></section>
             <section class=\"right\">
-                <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon close\">&#10005;</label>
+                <!-- Close icon -->
+                <label for=\"mobile-menu-toggle\" class=\"mobile-menu-icon close\">
+                    &#10005;
+                </label>
             </section>
         </section>
+
         <section class=\"body\">
-            {# <div class=\"language-switcher-container\">
-                {% block language_switcher %}
-                    {% include 'partials/components/language-switcher.html.twig' %}
-                {% endblock %}
-            </div> #}
             <nav class=\"navbar\">
                 <ul class=\"nav-links\">
                     {% for page in pages.children.visible %}
                     <li class=\"{% if page.active or page.activeChild %}selected{% endif %}\"
                         title=\"{{ page.menu ?: page.title }}\">
-                        <button>
-                            <a href=\"{{ page.url }}\">{{ page.menu ?: page.title }}</a>
-                        </button>
+                        <a href=\"{{ page.url }}\">{{ page.menu ?: page.title }}</a>
                     </li>
                     {% endfor %}
                 </ul>
@@ -138,6 +156,15 @@ class __TwigTemplate_9897a0cac3d1d7168878cb77fa98c846 extends \Twig\Template
         </section>
         <section class=\"footer\"></section>
     </div>
-</section>", "partials/menu_mobile.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\menu_mobile.html.twig");
+</section>
+<script>
+  document.querySelectorAll('.mobile-menu-icon').forEach(label => {
+    label.addEventListener('click', e => {
+      e.preventDefault();
+      const checkbox = document.getElementById('mobile-menu-toggle');
+      checkbox.checked = !checkbox.checked;
+    });
+  });
+</script>", "partials/menu_mobile.html.twig", "C:\\Users\\alber\\Desktop\\Alberto\\Projects\\Website-Emmanouela-Milaki\\user\\themes\\quark\\templates\\partials\\menu_mobile.html.twig");
     }
 }
